@@ -19,6 +19,13 @@
 	<?php } ?>
 	<header><div id="headwrap">
 		<div id="banner"><!--span class="black">COMP</span><span class="red">SOC</span--></div>
-		<div id="userinfo"><img src="<?php gravurl(); ?>" class="avatar"/></div>
+		<div id="userinfo">
+		        <?php if( !isset( $_GET['logout'])){ ?>
+		        <div id="uname">
+		                <h3>JR Hacker</h3>
+				<a href="index.php?logout" class="button">Log Out</a>
+			</div>
+		        <img src="<?php gravurl(); ?>" class="avatar"/></div>
+		        <?php } ?>
 		<div class="clear"></div>
 	</div></header>
