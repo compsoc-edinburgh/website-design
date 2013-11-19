@@ -29,7 +29,7 @@ blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 
-
+.hide { display: none; }
 
 /*  GENERIC CSS: --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
 
@@ -103,9 +103,9 @@ td, th { padding: 10px 20px; border-right: 1px dashed #E0E0E0; }
 }
 
 header {
-	height: 41px;
-	min-width: 1100px;
-	padding: 30px 50px;
+	height: 101px;
+	min-width: 1200px;
+	padding: 0;
 	background: #F9F9F9;
 	font-family: fipps;
 	font-size: 35px;
@@ -115,18 +115,62 @@ header {
 	text-align: center;
 }
 
+        header #headwrap {
+	        min-width: 1200px;
+		max-width: 1200px;
+		width: 1200px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+
 	header #banner {
-		background-image: url('../img/compsoc.png');
+		float: left;
+	        background-image: url('../img/compsoc.png');
 		height: 41px;
 		width: 233px;
-		background-position: center;
+		background-position: center center;
 		background-repeat: no-repeat;
-		margin: 0px auto;
+		margin: 0;
+		margin-left: 483.5px;
+		padding: 30px 0px;
 	}
 	
 	/* COMPSOC Red: */
 	header .red { color: #CE0E00; }
 	header .black { color: #000; }
+
+
+	header #userinfo {
+	        float: right;
+		height: 101px;
+		width: 300px;
+        }
+	
+	header #userinfo img.avatar {
+	        float: right;
+	        border-radius: 30px;
+                border: 3px solid #D3371E;
+		margin: 17.5px 0px;
+	}
+
+
+	/** Used for updates/ notifications to the site **/
+	aside#announce {
+	        background: #080808;
+		color: #EEEEEE;
+		font-size: 16px;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		text-transform: uppercase;
+	}
+
+	aside#announce p {
+	        display: block;
+		padding: 10px 0px;
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 1200px;
+	}
 
 
 
@@ -152,14 +196,22 @@ nav {
 		border-bottom: 3px solid #D3371E;
 	}
 	
+	nav #navwrap {
+	        max-width: 1200px;
+		width: 1200px;
+		margin: 0px auto;
+		display: block;
+		height: 50px;
+	}
+
 	nav ul {
 		list-style: none;
 		display: block;
 		height: 50px;
 		padding: 0px 0px;
-		max-width: 1200px;
-		width: 1200px;
-		margin: 0px auto;
+		max-width: 950px;
+		width: 950px;
+		/*margin: 0px auto;*/
 	}
 	
 	nav li {
@@ -201,7 +253,8 @@ nav form.search {
 	display: inline;
 	float: right;
 	position: relative;
-	top: -5px;
+	top: -42px;
+	/*left: -300px;*/
 }
 
 	nav form.search input[type="text"] {
