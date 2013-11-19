@@ -1,0 +1,670 @@
+
+/* COMPSOC Website CSS */
+/**
+ * COLOURS:
+ * red          : #D3371E
+ * official red : #CE0E00
+ * blue         : #00497F
+ * accent       : #D5D5D5
+ * beige        : #83786E
+ * lbeige       : #E4D8CC
+ * lgrey        : #F7F7F7
+ * dgrey        : #E4E4E4
+ * body text    : #585856
+**/ 
+
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@font-face {
+        font-family: fipps;
+	src: url('../img/Fipps-Regular.otf');
+}
+
+/*  RESETS:  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+/*  GENERIC CSS: --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background: #E9E9E9;
+	font-family: Arial,"MS Sans Serif","Geneva",sans-serif;
+	color: #585856;
+}
+
+em {
+	font-weight: inherit;
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+	font-style: inherit;
+}
+
+hr {
+	padding: 0; margin: 0; border: 0;
+	border-top: 1px solid #BFBFBF;
+	padding: 5px 0px;
+}
+
+dl { /* Definition List */
+	display: block;
+	padding: 0px 10px 30px 10px;
+	margin-top: 20px;
+	border-top: 3px solid #E4E4E4;
+	color: #808080;
+}
+
+dt { /* Definition Term */
+	font-size: 110%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+	dt::after { content: ":~"; }
+
+dd { /* Definition Description */
+	font-size: 80%;
+	text-indent: 20px;
+}
+
+/* Subscript and Superscript */
+sup { vertical-align: super; font-size: 75%; }
+sub { vertical-align: sub; font-size: 75%; }
+
+
+table { border-top: 3px solid #E0E0E0; width: 100%;}
+thead { font-size: larger; text-align: left; }
+tbody { font-size: inherit; }
+tr { 
+	border-bottom: 1px solid #E0E0E0; 
+	border-left: 1px dashed #E0E0E0;
+}
+td, th { padding: 10px 20px; border-right: 1px dashed #E0E0E0; }
+
+
+
+
+
+/*  FORMATTING:  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+#wrapper {
+	/* erm... */
+        min-width: 1200px;
+}
+
+header {
+	height: 41px;
+	min-width: 1100px;
+	padding: 30px 50px;
+	background: #F9F9F9;
+	font-family: fipps;
+	font-size: 35px;
+	line-height: 35px;
+	text-indent: -10px;
+	color: #000;
+	text-align: center;
+}
+
+	header #banner {
+		background-image: url('../img/compsoc.png');
+		height: 41px;
+		width: 233px;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: 0px auto;
+	}
+	
+	/* COMPSOC Red: */
+	header .red { color: #CE0E00; }
+	header .black { color: #000; }
+
+
+
+nav {
+	background: #DDDDDD;
+	height: 50px;
+	min-width: 1200px;
+	padding: 0px;
+	font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+	
+	nav a {
+		color: #0E0E0E;
+		text-decoration: none;
+		padding: 0px 15px;
+	}
+	
+	nav a.onit {
+	        color: #000;
+		height: 47px;
+		border-bottom: 3px solid #D3371E;
+	}
+	
+	nav ul {
+		list-style: none;
+		display: block;
+		height: 50px;
+		padding: 0px 0px;
+		max-width: 1200px;
+		width: 1200px;
+		margin: 0px auto;
+	}
+	
+	nav li {
+		display: inline-block;
+		height: 50px;
+	}
+	
+	nav li a {
+		display: block;
+		height: 50px;
+		line-height: 48px;
+		/*-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		transition: all 0.2s;*/
+	}
+	
+	nav a:hover {
+		background: #585856;
+		color: #EEEEEE;
+	}
+	
+	nav a.onit:hover {
+	        height: 47px;
+	}
+
+
+
+footer {
+	display: block;
+	clear: both;
+}
+
+
+
+/*  NAVIGATION STYLE:   --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+
+nav form.search {
+	display: inline;
+	float: right;
+	position: relative;
+	top: -5px;
+}
+
+	nav form.search input[type="text"] {
+		display: inline;
+		font-family: Georgia, Times, serif;
+		color: #585856;
+		border: 0; margin: 0; padding: 0;
+		padding: 5px 10px;
+		border: 1px solid #D8D8D8;
+		background: #EEEEEE;
+		height: 22px;
+		width: 200px;
+		-webkit-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+        box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+	}
+	
+		nav form.search input[type="text"]:focus {
+			background: #F8F8F8;
+		}
+	
+	nav form.search input[type="submit"] {
+		display: inline;
+		border: 0; margin: 0; padding: 0;
+		padding: 5px 10px;
+		border: 1px solid #CECECE;
+		border-left: 0;
+		background: #E0E0E0;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #646464;
+		height: 32px;
+	}
+	
+		nav form.search input[type="submit"]:hover,
+		nav form.search input[type="submit"]:focus {
+			background: #CECECE;
+			border: 1px solid #B9B9B9;
+			color: #000000;
+		}
+
+
+/*  CONTAINER STYLES:    --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+
+#container {
+	font-size: 16px;
+	width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
+	background: #F9F9F9;
+	color: #585856;
+	margin-bottom: 100px;
+}
+	
+	#container #content {
+		padding: 15px;
+	}
+	
+	#container p {
+		padding-top: 5px;
+		padding-bottom: 15px;
+		line-height: 20px;
+	}
+	
+	#container a {
+		color: #D3371E;
+		font-weight: inherit;
+		text-decoration: none;
+	}
+	
+		#container a:hover {
+			text-decoration: underline;
+		}
+		
+		#container a:visited {
+			color: #941515;
+		}
+	
+	#container h1 {
+		font-size: 42px;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-weight: normal;
+		color: #D3371E;
+		padding-bottom: 20px;
+		padding-top: 10px;
+	}
+	
+	#container h2 {
+		font-size: 30px;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #585856;
+		padding-bottom: 15px;
+		padding-top: 5px;
+	}
+	
+	#container h3 {
+		font-size: 20px;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #83786E;
+		padding-bottom: 10px;
+	}
+	
+	#container h4, #container h5, #container h6 {
+		font-size: 20px;
+		font-family: Georgia, Times, serif;
+		font-weight: normal;
+		color: #585856;
+		padding-bottom: 5px;
+	}
+	
+	#container q {
+		font-size: inherit;
+		color: #83786E;
+		font-style: italic;
+	}
+	
+	#container blockquote {
+		font-size: 18px;
+		padding: 15px;
+		border-left: 5px solid #E4E4E4;
+		font-style: italic;
+		color: #83786E;
+		margin: 10px 0px;
+	}
+	
+		#container blockquote cite {
+			display: block;
+			font-size: 15px;
+			padding-top: 10px;
+			color: #83786E;
+		}
+	
+	#container pre {
+		font-family: "Ubuntu Mono", monospace;
+		font-size: 14px;
+		line-height: 16px;
+		color: #111;
+		padding: 20px 15px;
+		margin: 10px 0px;
+		background: #E9E9E9;
+		border-left: 1px solid #D3371E;
+	}
+	
+	#container code {
+		display: inline;
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+		font-family: "Ubuntu Mono", monospace;
+	}
+	
+	#container ul {
+		list-style: disc;
+		list-style-type: circle;
+		list-style-position: outside;
+		margin-left: 25px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		line-height: 20px;
+	}
+	
+	#container ol {
+		list-style: decimal;
+		list-style-type: decimal;
+		list-style-position: outside;
+		margin-left: 25px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		line-height: 20px;
+	}
+		
+		#container ol ol {
+			list-style-type: lower-latin;
+			padding: 0;
+		}
+		
+		#container ol ol ol {
+			list-style-type: lower-roman;
+			padding: 0;
+		}
+
+	#container li {
+		padding: 2px 0px;
+	}
+
+	#container .footnotes { /* Generated by Markdown */
+		display: block;
+		padding: 30px 10px;
+		border-top: 3px solid #E4E4E4;
+		color: #808080;
+		font-size: inherit;
+		font-style: italic;
+	}
+		.footnotes hr { display: none; }
+	
+
+
+
+/*  GALLERY STYLE:       --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+#container #gallery {
+	padding: 20px;
+	border-bottom: 3px dashed #E4D8CC;
+}
+
+	#container #gallery h3 {
+		/*color: #D3371E;*/
+		color: #111;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	
+	#container #gallery div.column {
+		float: left;
+		width: 356px;
+		padding: 15px;
+		color: #525252;
+		font-family: Georgia, Times, serif;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	#container #gallery div.clear { clear: both; padding: 0; margin: 0; border: 0; }
+
+
+/*  I DON'T LIKE IE:     --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+#container #i-hate-ie {
+    padding: 40px 40px;
+    background: #080808;
+    color: #FFF;
+    
+}
+        #container #i-hate-ie h3 {
+               color: #FFF;
+	       font-size: 60px;
+        }
+	#container #i-hate-ie p {
+	       padding: 0;
+	       margin: 0;
+	       font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+	       font-size: 16px;
+	}
+
+
+/*  CONTENT STYLE:       --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+
+#container article {
+	padding: 0px 20px;
+	font-size: 14px;
+}
+
+	#container article img {
+		display: block;
+		padding: 10px;
+		margin: 0px auto;
+	}
+	
+	#container article iframe {
+		width: 100%;
+		display: block;
+		margin: 20px auto;
+	}
+
+
+#container div.post-header {
+	height: 110px;
+	max-height: 110px;
+	margin-top: 20px;
+}
+
+	#container div.post-header h3 {
+		font-size: 14px;
+	}
+
+	#container div.post-header img {
+		float: right;
+		width: 80px;
+		height: 80px;
+		padding: 15px 0px;
+	}
+
+
+
+
+/*  COMMENT STYLES:      --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+
+#container div.comments{
+	/* Comments DIV tag CSS*/
+	padding: 0px;
+	margin: 20px 0px;
+}
+
+	#container div.comments .form {
+		border-top: 3px solid #D3371E;
+		background: #EEEEEE;
+		width: 1170px;
+		position: relative;
+	}
+	
+	#container div.comments .form .meta {
+		padding: 20px;
+		height: 102px;
+		width: 186px;
+		max-width: 186px;
+		min-width: 186px;
+		float: left;
+	}
+	
+	#container div.comments .form span.detail {
+		display: block;
+		padding: 5px 0px 10px 0px;
+		font-size: 12px;
+		color: #83786E;
+		text-align: center;
+	}
+	
+	#container div.comments .form input[type="submit"] {
+		border: 1px solid #CECECE;
+		background: #E0E0E0;
+		border-radius: 2px;
+		padding: 5px 20px;
+		width: 100%;
+		height: 30px;
+		vertical-align: middle;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #646464;
+		vertical-align: middle;
+	}
+	
+		#container div.comments .form input[type="submit"]:hover {
+			background: #CECECE;
+			border: 1px solid #B9B9B9;
+			color: #000000;
+		}
+	
+	#container div.comments .form textarea {
+		display: inline;
+		float: right;
+		font-family: Georgia, Times, serif;
+		font-size: 16px;
+		line-height: 20px;
+		color: #585856;
+		background: #EEEEEE;
+		min-height: 100px;
+		max-width: 900px;
+		width: 900px;
+		padding: 20px;
+		margin: 0px;
+		border: 1px solid #D8D8D8;
+		-webkit-box-shadow: inset 0px 0px 20px 0px #D8D8D8;
+        box-shadow: inset 0px 0px 20px 0px #D8D8D8;
+	}
+	
+		#container div.comments .form ::-webkit-input-placeholder, 
+		#container div.comments .form ::-moz-placeholder {
+			color: #BEBEBE;
+		}
+	
+	/* Redefined widths for nested reply forms: */
+	#container div.comments ul ul div.form { left: -50px; }
+	#container div.comments ul ul ul div.form { left: -100px; }
+	#container div.comments ul ul ul ul div.form { left: -150px; }
+	#container div.comments ul ul ul ul ul div.form { left: -200px; }
+	
+	#container div.comments .form .clear {
+		display: block;
+		clear: right;
+		padding: 0; margin: 0; width: 0; height: 0;
+	}
+	
+	#container div.comments ul.comments-list {
+		display: block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	
+	#container div.comments li {
+		border-top: 3px solid #E4E4E4;
+	}
+	
+	#container div.comments li p.body {
+		display: block;
+		padding: 20px 20px 20px 230px;
+		min-height: 85px;
+	}
+	
+		#container div.comments li.distributor {
+			background: #F5F5F5;
+		}
+		#container div.comments li.staff {
+			background: #EEEEEE;
+		}
+		#container div.comments li.author {
+			/*background: #F0E8E1;*/
+		}
+	
+	#container div.comments li p.meta {
+		clear: both;
+		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+		font-size: 16px;
+		color: #83786E;
+		padding: 0px 20px 20px 230px;
+	} 
+
+	#container div.comments div.meta .detail {
+		font-family: Georgia, Times, serif;
+	}
+	
+	#container div.comments .avatar {
+		border: 0; margin: 0; padding: 0;
+		margin-top: 20px;
+		margin-left: 75px;
+		height: 80px;
+		width: 80px;
+		float: left;
+		border-radius: 40px;
+		border: 3px solid #D8D8D8;
+	}
+		#container div.comments img.distributor {
+			border: 3px solid #1ED380;
+		}
+		#container div.comments img.staff {
+			border: 3px solid #D3371E;
+		}
+	
+	#container div.comments ul ul {
+		margin-left: 50px;
+		list-style: none;
+		padding: 0;
+	}
+
+
+
+/*  FOOTER STYLE:        --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+#container footer {
+	background: #DDD;
+	border-top: 3px solid #D3371E;
+	padding: 40px 20px;
+	clear: both;
+	color: #0E0E0E;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+}
+
+#container footer p {
+	font-family: Georgia, Times, serif;
+	color: #585856;
+	text-transform: none;
+	font-size: 16px;
+	line-height: 18px;
+}
+
