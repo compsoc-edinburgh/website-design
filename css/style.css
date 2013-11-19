@@ -160,14 +160,30 @@ header {
 		text-transform: uppercase;
 		color: #0E0E0E;
 	}
-	
-	header #userinfo #uname a {
-	        color: #5E0E0E;
+
+	header #userinfo a {
+	        text-decoration: none;
 	}
 	
-	header #userinfo #uname a:visited {
-	        color: #5E0E0E;
+	header #userinfo a.button {
+	        color: #B4B4B4;
+		width: 60px;
+		border: 1px solid #E9E9E9;
+		background: #F2F2F2;
+		border-radius: 2px;
+		display: block;
+		float: right;
+		text-align: center;
+		padding: 5px 10px;
+		margin: 10px 0px;
 	}
+
+	        header #userinfo a.button:hover {
+		        color: #646464;
+			background: #E9E9E9;
+			border: 1px solid #E2E2E2;
+		}
+
 	
 	header #userinfo img.avatar {
 	        float: right;
@@ -180,7 +196,7 @@ header {
 	}
 
 
-	/** Used for updates/ notifications to the site **/
+	/* Used for updates/ notifications to the site */
 	aside#announce {
 	        background: #080808;
 		color: #EEEEEE;
@@ -279,7 +295,6 @@ nav form.search {
 	float: right;
 	position: relative;
 	top: -42px;
-	/*left: -300px;*/
 }
 
 	nav form.search input[type="text"] {
@@ -293,7 +308,7 @@ nav form.search {
 		height: 22px;
 		width: 200px;
 		-webkit-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
-        box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+		box-shadow: inset 0px 0px 20px 0px #E0E0E0;
 	}
 	
 		nav form.search input[type="text"]:focus {
@@ -487,6 +502,7 @@ nav form.search {
 
 #container #gallery {
 	padding: 20px;
+	padding-bottom: 0px;
 	border-bottom: 3px dashed #E4D8CC;
 }
 
@@ -551,6 +567,23 @@ nav form.search {
 		margin: 20px auto;
 	}
 
+#container div.image-caption {
+        border: 1px solid #D8D8D8;
+        background: #FEFEFE;
+        border-radius: 2px;
+        margin: 20px 0px;
+}
+
+#container div.image-caption p {
+        text-align: center;
+	border-top: 1px solid #D8D8D8;
+	background: #EEEEEE;
+}
+
+#container div.image-caption img {
+	padding: 20px 0px;
+	max-width: 1100px;
+}	
 
 #container div.post-header {
 	height: 110px;

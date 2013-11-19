@@ -16,6 +16,6 @@
 	</div><!-- end content -->
 	
 	<footer>
-		COMPSOC New New Website FTW!
+		New New CompSoc site FTW!!!
 	</footer>
 	

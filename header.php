@@ -22,10 +22,12 @@
 		<div id="userinfo">
 		        <?php if( !isset( $_GET['logout'])){ ?>
 		        <div id="uname">
-		                <h3>JR Hacker</h3>
+		                <a href="accunt.php"><h3>JR Hacker</h3></a>
 				<a href="index.php?logout" class="button">Log Out</a>
 			</div>
-		        <img src="<?php gravurl(); ?>" class="avatar"/></div>
-		        <?php } ?>
+		        <a href="account.php"><img src="<?php gravurl(); ?>" class="avatar"/></a>
+		        <?php } else { ?>
+			<a href="index.php" class="button">Log In</a>
+			<?php } ?>
 		<div class="clear"></div>
 	</div></header>
