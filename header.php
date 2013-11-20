@@ -29,5 +29,5 @@
 		        <?php } else { ?>
 			<a href="index.php" class="button">Log In</a>
 			<?php } ?>
-		<div class="clear"></div>
+		</div>
 	</div></header>
