@@ -51,11 +51,11 @@
 				<h3>by Paul Scherer - last modified Oct 02, 2013 02:49 AM</h3>
 			</div>
 		<p>Many of our activities we do in CompSoc would not be possible without the contributions of our sponsors, so we have dedicated a page to them and their contributions.</p>
-<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" /><p>Yay! We're sponsored by Google!! Monies!</p></div>
-<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" /><p>Compsoc: Powered by Amazon's Bank Account</p></div>
-<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/datasiftlogo" /><p>Not heard of this company but cool-ish logo!</p></div>
-<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/citilogosmaller" /><p>Yay! A Bank... :-/</p></div>
-<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/accenturelogorevised" /><p>Oh! I've heard of this one...</p></div>
+<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" /><p>Google gave us funds for hackathon prizes, general STMU fees, and SIGs.</p></div>
+<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" /><p>Amazon gave us funds for hackathon prizes, STMU, SIGs. In the past they have invited us to their Edinburgh Hackathon.</p></div>
+<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/datasiftlogo" /><p>DataSift gave us funds for hacakthon prizes, general STMU fees, and SIGs.</p></div>
+<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/citilogosmaller" /><p>Citigroup contacted us first and gave us funds to be used in publications, hackathon prizes, SIGs, and for our STMUs</p></div>
+<div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/accenturelogorevised" /><p>Accenture gave us funds for publications, hackathon prizes, STMU, SIGs, with some being dedicated to the purchase of a new Server, that provides hosting for this site as well as the hosting for many of our SIGs' project management pages.</p></div>
 		</article>
 		
 		

@@ -1,3 +1,10 @@
+Hey!
+====
+
+It's only in PHP at the moment so I can chop it up easily;
+Had PHP installed already.
+A live version is up on http://enginger.me/compsoc
+
 Notes and ToDos for the HTML&CSS
 ================================
 

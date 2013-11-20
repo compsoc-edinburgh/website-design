@@ -46,58 +46,120 @@
 	<div id="content">
 		
 		<article>
-			<div class="post-header">
-				<h1>About CompSoc!</h1>
-				<h3>by Paul - published Aug 29, 2013 02:55 PM, last modified Oct 02, 2013 03:01 AM</h3>
-			</div>
-<p>We are The University of Edinburgh Computing Society and Artificial Intelligence Society, also more well known as CompSoc.</p>
-<p>Compsoc is a student run, gigantic cooking pot of geeky people who have a healthy (yet more likely unhealthy) interest in Computing and Information techonologies. This does not mean that the society in only interested in the technologies, theories and practice of Computing or how Cloud computing is just a marketing tool for a technology thats existed a lot longer. CompSoc is also concerned with the impact of computing and information technologies to the general public as a whole. </p>
-<p>The society also encourages and provides support to those who want to collaborate with other peers and staff to realize their extracurricular projects and papers. These individuals and groups become SIGs (Special Interest Group). Even inside of The University of Edinburgh's informatics curriculum we try to provide support to students (especially those in first year) in line with their semester studies with special workshops provided by peers in CompSoc. For example: Last year we ran a midnight haskell session from 12-4 in the morning to get ready for an exam the next morning, and attendees felt that they did much better because of it. Moreover we have a Cascaders program in which you can approach any Cascaders Participant in Appleton Tower when you find them carrying a Plush Toy near their computer signifying their expertise (think Python for Python, Camel for Perl, Gandalf's hat for Lisp) as well as a SIG that is going to work on the webclient for Cascaders.</p>
-<ul>
-<li>The compsoc github page is <a href="https://github.com/compsoc-edinburgh">here</a>.</li>
-<li>Cascaders repo <a href="https://github.com/compsoc-edinburgh/cascaders">here</a>.</li>
-<li>Dont forget to check out the <a href="http://comp-soc.com/compsoc/knowledgebase">KnowledgeBase</a>!</li>
-</ul>
-<p><br />
-We also run a Student Tech Meet Up (STMU) monthly to invite industry experts, and starting this year, academia from the University Informatics Department to give talks on current issues and new tchnologies. There's also free pizza for everyone at this event. Always. Moreover committee members, SIGs, members of CompSoc are welcome to give talk in our STMU's as well. Many topics are allowed as topics of talks and can widely differ from the norm as well. For example, presentations on design patterns, XProgramming, and business psychology in the software market may be given by peers in CompSoc</p>
-<p>In the end we also love our traditional Hackathons to test our skill and valor in battle, for glory, street cred and loot.</p>
-<p>It isn't all talks, keyboards and screens however. We run a pub social every other week, with the week in-between spent working on SIG projects and running events with our friends in GameDevSoc, Hoppers, and the Game Society. Not to forget: that we have other special events lined up that one shouldn't miss as these may form integral parts of your university memories.
-<br /></p>
-<p>So in summary:</p>
-<ol>
-<li>Meeting place for like-minded individuals with vastly different skillsets and opinions to make friends with</li>
-<li>Support for to those who want to take part in extracurricular activities. (SIGs)</li>
-<li>Workshops and Informal Lectures for first years in need of extra help especially outside normal hours provided </li>
-<li>Cascaders</li>
-<li>Student Tech Meet Up to meet up with those in industry and from our University's brilliant department to learn some cool stuff or look for career opportunities</li>
-<li>Hackathons to test your mettle against your peers for glory (people have gotten jobs from this, and some even created their own start-ups!</li>
-<li>Pub Socials and SIGs on a weekly basis</li>
-<li>Special co-op events with our friends in GameDevSoc, Hoppers, and GameSoc</li>
-<li>Other awesome events planned along the year.</li>
-<li>Another 10th reason to get your fingers stretched out counting the reasons to join CompSoc</li>
-</ol>
-<p><br /><br />
-If you think you need technical/programming/informatics/blah skills to enjoy CompSoc you are wrong! we are open to anyone and everyone in the University of Edinburgh so dont be afraid to pop in and say hi!
-<br /> <br />
-</p>
-<p>-Your CompSoc Committee 2013-2014</p>
-<p><br /><br />
-</p>
-<h4>Contact Us!</h4>
-<p><strong>Email:</strong> edinburghcompsoc@gmail.com</p>
-<p><strong>IRC:</strong> #compsoc @ irc.imaginarynet.org.uk</p>
-<p>You can usually find Committee Members near AT4 or AT5 Westlab</p>
-<h4>Committee (2013-2014)</h4>
-<p><strong>President:</strong> Paul M Scherer  (IRC: pmorio)</p>
-<p><strong>Secretary:</strong> Kimberley McCann</p>
-<p><strong>Treasurer:</strong> Martin Husbyn</p>
-<p><strong>Vice President:</strong> Chris Swart</p>
-<p><strong>Technical Secretary:</strong> Rikki "Teh Numbers" Guy (irc: R2ZER0, email: compsoc@rikkiguy.me.uk)</p>
-<p><strong>Social Secretary:</strong> Craig Ross</p>
-<p><strong>4th Year Rep:</strong></p>
-<p><strong>3rd Year Rep:</strong></p>
-<p><strong>2nd Year Rep:</strong></p>
-<p><strong>1st Year Rep:</strong> </p>
+		<div class="post-header">
+		  <h1>HTML CSS Layout test:</h1>
+		  <h3>Just so you can see what the CSS does...</h3>
+		</div>
+		<p>The title is wrapped in a div with class post-header, which modifies the formatting a little</p>
+		<h1>Heading 1</h1>
+		<p>Spacer Paragraph...</p>
+		<h2>Heading 2</h2>
+                <p>Spacer Paragraph...</p>
+		<h3>Heading 3</h3>
+                <p>Spacer Paragraph...</p>
+		<h4>[unused] Heading 4</h4>
+                <p>Spacer Paragraph...</p>
+		<h5>[unused] Heading 5</h5>
+                <p>Spacer Paragraph...</p>
+		<h6>[unused] Heading 6</h6>
+                <p>Spacer Paragraph...</p>
+		<hr/>
+		<p>Horizontal rule, &lt;hr/&gt; above</p>
+		<blockquote>If there are developers in the audience you'll know this: Developers have the attention spans of slightly moronic woodland creatures. There's not much going on; they want to work on the next thing. Giving them another week is just going to add frustration to everything.
+		<cite>Linus Torvalds, LinuxCon Europe 2013</cite></blockquote>
+		<p>Block Quote, &lt;blockquote&gt;...&lt;cite&gt;&lt;/cite&gt;&lt/blockquote&gt;</p>
+		<p>Inline quotes are slightly different: <q>Developers have the attention spans of slightly moronic woodland creatures.</q> but are still useful. &lt;q&gt;&lt;/q&gt;</p>
+		
+		<p>There's some special formatting for images as well: a &lt;div class="image-caption"&gt; conaining an &lt;img /&gt; tag and a &lt;p&gt;&lt/p&gt; will render like:</p>
+		<div class="image-caption">
+		  <img src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
+		  <p>With the caption content rendering in the paragraph tag</p>
+		</div>
+		
+		<p>Which is different to how images normally render, here kindly demonstrated by Amazon; By default, they render as blocks that are centred.</p>
+		<img src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" />
+
+		<p>iframes have a little bit of customisation, i.e. they're forced into 100% width. This may change:</p>
+		<iframe width="420" height="315" src="//www.youtube.com/embed/jjRAKuis7T8" frameborder="0" allowfullscreen></iframe>
+
+		<p>In HTML 5 &lt;b&gt; (bold) has been replaced with &lt;strong&gt; and &lt;i&gt; (itlaics) has been replaced with &lt;em&gt; (emphasis). Ol tags still render but we're not using them.</p>
+		<p>So, some bold text using the strong tags looks like: <strong>this</strong> whilst using the old b tags looks like <b>this</b>, i.e. is deprecated in most browsers.</p>
+		<p>Similarly, the emphasis tage gives test like <em>this</em> and the old i tag gives <i>this</i>, which is again deprecated as we're using HTML5</p>
+		<p>The &lt;sup&gt; and &lt;sub&gt; tags are also available for <sup>superscript</sup> and <sub>subscript</sub> text, and are chainable <sup>for people<sup> who reddit too much<sup>Ahhhhh!</sup></sup></sup> But they do mess up the line heights a bit...</p>
+		<p>There are other 'semantic' HTML5 tags, like <small>small (Does nothing)</small>, <ins>ins for inserted text</ins>, <del>del for deleted text</del>, and <mark>mark</mark> to mark/hilight text. There's custom css for text selection, that <span style="color: #fff; background: #f57870;">makes it look like this.</span></p>
+
+		<table><thead><tr><td>Double Column</td><td>Tables</td></tr></thead>
+		<tbody><tr><td>Top Left</td><td>Top Right</td></tr>
+		<tr><td>Middle Left</td><td>Middle Right</td></tr>
+		<tr><td>Bottom Left</td><td>Bottom Right</td></tr>
+		</tbody></table>
+		<p>Various table formats</p>
+		<table><thead><tr><td>Triple</td><td>Column</td><td>Tables</td></tr></thead>
+		<tbody>
+		<tr><td>Top Left</td><td>Top Middle</td><td>Top Right</td></tr>
+		<tr><td>Middle Left</td><td>Middle Middle</td><td>Middle Right</td></tr>
+		<tr><td>Bottom Left</td><td>Bottom Middle</td><td>Bottom Right</td></tr>
+		</tbody></table>
+
+		<p>Difinition lists aren't all that common, but we have CSS for them! Yay!</p>
+		<dl>
+		  <dt>Dummster Anzunehmender User</dt>
+		  <dd>German for stupidest immaginable user; Often at the centre of PEBKAC issues...</dd>
+		  <dt>Bogosort</dt>
+		  <dd>The archetypical perversely awful algorithm (as opposed to bubble sort, which is merely the generic bad algorithm).</dd>
+		</dl>
+
+		<p>We have the standard ordered and unordered lists as well: &lt;ul | ol&gt; &lt;li&gt;&lt;/li&gt; &lt;/ul | /ol&gt;</p>
+		<ul>
+		  <li>Unoredered list</li>
+		  <li>And another</li>
+		  <li><ul>
+		      <li>An embedded ul</li>
+		      <li>Looks a bit odd...</li>
+		  </ul></li>
+		  <li>And we can also embed ordered lists in unordered ones:</li>
+		  <li><ol>
+		      <li>1st entry</li>
+		      <li>second</li>
+		  </ol></li>
+		  <li>And the list goes on...</li>
+		</ul>
+		
+		<p>And ordered lists have a different indexing system for 3 levels deep:</p>
+
+		<ol>
+		  <li>The list uses numbered indexing</li>
+		  <li>for the first level, then</li>
+		  <li><ol>
+		      <li>Lowecase latin for the next level of lists;</li>
+		      <li><ol>
+			  <li>Then lowercase numerals for the third level of listing</li>
+			  <li>And on and on and on and on and on and on...</li>
+		      </ol></li>
+		  </ol></li>
+		</ol>
+
+		<p>Preformatted code blocks: &lt;pre&gt; &lt;/pre&gt;</p>
+		<pre>
+Note that html in pres will still be rendered; e.g. <q>a quote</q>
+   And that whitespace, like indentation, persists
+
+loeb :: Functor f => f (f a -> a) -> f a
+loeb x = go where go = fmap ($ go) x
+
+moeb :: (((a -> b) -> b) -> c -> a) -> c -> a
+moeb f x = go where go = f ($ go) x
+		</pre>
+		<p>We also have footnotes, which should be auto generated??</p>
+		
+		<div class="footnotes">
+		<ol>
+		  <li>These are fairly self-explanatory</li>
+		  <li>Just your run of the mill footnotes...</li>
+		  <li>You've seen these before</li>
+		</ol>
+		</div>
+		
 		</article>
 		
 		
