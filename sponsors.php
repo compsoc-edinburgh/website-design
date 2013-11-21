@@ -58,7 +58,7 @@
 <div class="image-caption"><img src="http://comp-soc.com/compsoc/sponsor-logos/accenturelogorevised" /><p>Accenture gave us funds for publications, hackathon prizes, STMU, SIGs, with some being dedicated to the purchase of a new Server, that provides hosting for this site as well as the hosting for many of our SIGs' project management pages.</p></div>
 		</article>
 		
-		
+		<?php include("sidebar.php"); ?>
 		<?php include("footer.php"); ?>
 	
 	</div><!-- end container -->

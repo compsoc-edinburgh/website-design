@@ -68,7 +68,7 @@
 <p>Hackathons are often the most exciting times for CompSoc as this is the time when many of our members come together and compete to produce code in a set amount of time. Hackathon participants are usually given a theme to base their code around but are otherwise given complete freedom as to what they create (as long it's nothing malicious). Winners and honorable mentions are given prizes and the occasional job/internship offer from Sponsors of the event... so hackathons are our battles for glory and loot.</p>
 		</article>
 		
-		
+		<?php include("sidebar.php"); ?>
 		<?php include("footer.php"); ?>
 	
 	</div><!-- end container -->

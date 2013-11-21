@@ -35,6 +35,7 @@ html, body {
 	margin: 0;
 	background: #E9E9E9;
 	font-family: Arial,"MS Sans Serif","Geneva",sans-serif;
+	font-size: 14px;
 	color: #585856;
 }
 
@@ -88,6 +89,22 @@ tr {
 }
 td, th { padding: 10px 20px; border-right: 1px dashed #E0E0E0; }
 
+/* COMMON CLASSES:   --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+.clear { clear: both; margin: 0; padding: 0; display: block; }
+
+a.button {
+        color: #B4B4B4;
+        border: 1px solid #E9E9E9;
+        background: #F2F2F2;
+        border-radius: 2px;
+        display: block;
+        float: right;
+        text-align: center;
+	text-decoration: none;
+        padding: 5px 10px;
+        margin: 10px 0px;
+}
 
 ::selection, mark {
     background: #f57870;
@@ -340,7 +357,7 @@ nav form.search {
 
 
 #container {
-	font-size: 16px;
+	font-size: 14px;
 	width: 1200px;
 	margin: 0px auto;
 	padding: 0px;
@@ -371,6 +388,25 @@ nav form.search {
 		
 		#container a:visited {
 			color: #941515;
+		}
+		
+		#container a.button {
+		        color: #585858;
+			border: 1px solid #E9E9E9;
+			background: #F2F2F2;
+			border-radius: 2px;
+			display: block;
+			float: right;
+			text-align: center;
+			text-decoration: none;
+			padding: 5px 10px;
+			margin: 10px 0px;
+		}
+		
+		#container a.button:hover {
+		        color: #646464;
+                        background: #E9E9E9;
+                        border: 1px solid #E2E2E2;
 		}
 	
 	#container h1 {
@@ -493,25 +529,35 @@ nav form.search {
 	
 
 
-/* SITE FUNCTION STUFF:  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+/*  USER ACCOUNT PAGE:   --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
 
 #account-blurb {
         width: 220px;
 	background: #DDD;
 	color: #000;
-	font-family: 'Andada', Georgia, Times, serif;
+	font-size: 12px;
+	float: left;
+	overflow: hidden;
 }
 
-#account-blurb h3 {
+#account-blurb h2 {
         color: #000;
 }
 
 #account-blurb img {
         min-width: 220px;
+	min-height: 220px;
+	background: #0E0E0E;
 }
 
 #account-blurb #user-info {
         padding: 10px;
+}
+
+#account-main {
+        margin: 0px 20px;
+        float: left;
 }
 
 /*  GALLERY STYLE:       --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
@@ -542,6 +588,74 @@ nav form.search {
 	
 	#container #gallery div.clear { clear: both; padding: 0; margin: 0; border: 0; }
 
+/*  SIDEBAR:             --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+aside#sidebar {
+    float: left;
+    max-width: 299px;
+    width: 299px;
+    padding: 20px 15px;
+    overflow: hidden;
+    border-left: 1px solid #E4D8CC;
+}
+
+    aside#sidebar h1 {
+	color: #111;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 10px 0px;
+    }
+    
+    aside#sidebar h2 {
+	color: #585858;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 10px;
+	padding-top: 0px;
+    }
+    
+    aside#sidebar section.event {
+	clear: both;
+	display: block;
+	padding-bottom: 10px;
+    }
+    
+    aside#sidebar section.event div.event-cal {
+	max-width: 70px;
+	width: 70px;
+	float: left;
+	background: #DDD;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	color: #111;
+	margin-right: 10px;
+	text-align: center;
+    }
+
+    aside#sidebar section.event div.event-description {
+	float: left;
+	max-width: 209px;
+	width: 209px;
+    }
+
+        aside#sidebar section.event div.event-description p { font-size: 90%; line-height: 110%; }
+    
+    aside#sidebar section.event div.event-date {
+	width: 60px;
+	padding: 5px;
+    }
+    
+        aside#sidebar section.event span.event-date-day { display: block; font-size: 100%; }
+        aside#sidebar section.event span.event-date-num { display: block; font-size: 150%; }
+	aside#sidebar section.event span.event-date-mon { display: block; font-size: 70%; }
+    
+    aside#sidebar section.event div.event-time {
+	width: 60px;
+	padding: 5px;
+	background: #EEE;
+	border-top: 1px solid #CCC;
+    }
+
 
 /*  I DON'T LIKE IE:     --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
 
@@ -569,6 +683,10 @@ nav form.search {
 #container article {
 	padding: 0px 20px;
 	font-size: 14px;
+	float: left;
+	max-width: 800px;
+	width: 800px;
+	overflow: hidden;
 }
 
 	#container article img {

@@ -39,7 +39,7 @@
 	
 	
 	
-	<aside id="gallery">
+	<section id="gallery">
 		<div class="column">
 			<h3>November STMU</h3>
 			<p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned 
@@ -58,7 +58,7 @@
 			varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla. 
 		</div>
 		<div class="clear"></div>
-	</aside><!-- end gallery -->
+	</section><!-- end gallery -->
 	
 	<!--[if lte IE 7]><div id="i-hate-ie">
 	        <h3>WE LOVE HTML5, CSS3 AND KITTENS!</h3>
@@ -85,7 +85,9 @@
 			<p>Also, adding ?announce and ?logout to the end of the URLs show the themeing for site announcements and being logged out.</p>
 			
 		</article>
-		
+
+                <?php include("sidebar.php"); ?>
+
                 <div class="comments">
                         <div class="form">
                         <form action="index.php" method="get" >

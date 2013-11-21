@@ -70,6 +70,8 @@
 		<p>Block Quote, &lt;blockquote&gt;...&lt;cite&gt;&lt;/cite&gt;&lt/blockquote&gt;</p>
 		<p>Inline quotes are slightly different: <q>Developers have the attention spans of slightly moronic woodland creatures.</q> but are still useful. &lt;q&gt;&lt;/q&gt;</p>
 		
+		<p>Hyperlinks, i.e. &lt;a&gt; tags are fairly simple: <a href="http://www.google.co.uk">Google UK</a> with respect to their styling</p>
+		
 		<p>There's some special formatting for images as well: a &lt;div class="image-caption"&gt; conaining an &lt;img /&gt; tag and a &lt;p&gt;&lt/p&gt; will render like:</p>
 		<div class="image-caption">
 		  <img src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
@@ -162,7 +164,7 @@ moeb f x = go where go = f ($ go) x
 		
 		</article>
 		
-		
+		<?php include("sidebar.php"); ?>
 		<?php include("footer.php"); ?>
 	
 	</div><!-- end container -->

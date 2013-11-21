@@ -49,10 +49,20 @@
 		  <img src="<?php bigGravUrl(); ?>" />
 		  <div id="user-info">
 		  <h2>JR Hacker</h2>
-		  <p>jrh@catb.org</p>
+		  <p>jrhacker@mail.catb.org</p>
+		  
 		  </div>
 		</div>
+		
+		<div id="account-main">
+		  
+		  <a href="account.php" class="button">Edit</a>
+		  
+		  <h3></h3>
+		  
+		</div>
 	        
+		<div class="clear"></div>
 	        <?php include("footer.php"); ?>
 	
 	</div><!-- end container -->
