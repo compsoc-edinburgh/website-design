@@ -46,17 +46,72 @@
 	<div id="content">
 		
 	        <div id="account-blurb">
-		  <img src="<?php bigGravUrl(); ?>" />
+		  <img src="<?php bigGravUrl(); ?>" alt="Profile Picture" />
 		  <div id="user-info">
 		  <h2>JR Hacker</h2>
-		  <p>jrhacker@mail.catb.org</p>
-		  
+		  <p>
+		  jrhacker@catb.org<br/>
+		  #compsoc : jrh
+		  </p>
 		  </div>
+		  <a href="account.php" class="button">Edit</a> 
 		</div>
 		
 		<div id="account-main">
 		  
-		  <a href="account.php" class="button">Edit</a>
+		  <div class="account-column">
+		    
+		    <h1>Cascaders</h1>
+		    <p>Select programming languages and Informatics topics that you're willing to help people out with:</p>
+		    <table><thead>
+			<tr><td>Subject</td><td>Level</td><td></td></tr>
+		    </thead><tbody>
+			<tr><td>C</td><td>4</td><td>I <3 machine code</td></tr>
+			<tr><td>Bash Scripting</td><td>4</td><td>Dream in #!/bin/bash</td></tr>
+			<tr><td>INF1 Java</td><td>3</td><td>Pretty Damn Good</td></tr> 
+			<tr><td>Haskell</td><td>2</td><td>Functional</td></tr>
+			<tr><td>Java</td><td>2</td><td>Competent</td></tr>
+			<tr><td>HTML & CSS</td><td>1</td><td>Bit of a &lt;noob&gt;</td></tr>
+			<tr><td><a href="account.php" class="button">Add...</a></td></tr>
+		    </tbody></table>
+	
+		    <h1>IRC</h1>
+                    <h3>Current Swearer's league:</h3>
+                    <p>Your postion is hilighted. Updated weekly. We're still not sure if this is a good thing or...</p>
+                    <table><thead>
+		    <tr><td>Rank</td><td>Nick</td><td>Score</td></tr>
+		    </thead><tbody>
+                    <tr><td>1st </td><td>sballmer                </td><td>  586</td></tr>
+                    <tr><td>2nd </td><td>torvalds                </td><td>  526</td></tr>
+                    <tr class="mark"><td>3rd </td><td>jrh        </td><td>  239</td></tr>
+                    <tr><td>4th </td><td>woz                     </td><td>  208</td></tr>
+                    <tr><td>5th </td><td>ritchie                 </td><td>  110</td></tr>
+                    <tr><td>6th </td><td>thomson                 </td><td>  85</td></tr>
+                    <tr><td>7th </td><td>berners                 </td><td>  63</td></tr>
+                    <tr><td>8th </td><td>mullenweg               </td><td>  62</td></tr>
+                    <tr><td>9th </td><td>larry                   </td><td>  43</td></tr>
+                    <tr><td>10th</td><td>lambdabot               </td><td>  31</td></tr>
+                    </tbody></table>
+		  
+		  </div>
+		  
+		  <div class="account-column">
+
+		    <h1>User Information</h1>
+                    <p>All the information we have on you</p>
+                    <table><tbody>
+                        <tr><td>Username</td><td>JRHacker</td></tr>
+                        <tr><td>First Name</td><td><input type="text" name="fname" value="JR"></input></td></tr>
+                        <tr><td>Second Name</td><td><input type="text" name="fname" value="Hacker"></td></tr>
+                        <tr><td>Primary Email</td><td><input type="text" name="pemail" value="jrhacker@catb.org"></input></td></tr>
+			<tr><td>Secondary Email</td><td><a href="account.php" class="button">Add...</a></td></tr>
+			<tr><td>IRC Nick</td><td><input type="text" name="ircnick" value="jrh"></input></td></tr>
+                    </tbody></table>
+		    
+		    <h1>Profile</h1>
+		    <textarea>Not got much to say given I'm the archetypical filler content person...</textarea>
+		  
+		  </div>
 		  
 		  <h3></h3>
 		  

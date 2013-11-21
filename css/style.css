@@ -89,6 +89,10 @@ tr {
 }
 td, th { padding: 10px 20px; border-right: 1px dashed #E0E0E0; }
 
+::selection { background: #F57870; color: #FFF; }
+mark, .mark { background: #F57870; color: #FFF; }
+
+
 /* COMMON CLASSES:   --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
 
 .clear { clear: both; margin: 0; padding: 0; display: block; }
@@ -99,16 +103,10 @@ a.button {
         background: #F2F2F2;
         border-radius: 2px;
         display: block;
-        float: right;
         text-align: center;
 	text-decoration: none;
         padding: 5px 10px;
         margin: 10px 0px;
-}
-
-::selection, mark {
-    background: #f57870;
-    color: #FFFFFF;
 }
 
 
@@ -146,7 +144,9 @@ header {
 		background-position: center center;
 		background-repeat: no-repeat;
 		margin: 0;
-		margin-left: 483.5px;
+		/* Centred Logo:
+		margin-left: 483.5px;*/
+		margin-left: 35px;
 		padding: 30px 0px;
 	}
 	
@@ -367,7 +367,8 @@ nav form.search {
 }
 	
 	#container #content {
-		padding: 15px;
+		padding: 20px 35px;
+		padding-right: 15px;
 	}
 	
 	#container p {
@@ -396,7 +397,6 @@ nav form.search {
 			background: #F2F2F2;
 			border-radius: 2px;
 			display: block;
-			float: right;
 			text-align: center;
 			text-decoration: none;
 			padding: 5px 10px;
@@ -527,6 +527,37 @@ nav form.search {
 		font-style: italic;
 	}
 	
+	
+	#container input[type="text"] {
+	    background: #FFF;
+	    border: 1px solid #D9D9D9;
+	    border-radius: 2px;
+	    -webkit-box-shadow: inset 0px 0px 20px 0px #EEE;
+            box-shadow: inset 0px 0px 20px 0px #EEE;
+	    padding: 5px;
+	    font-family: 'Andada', Georgia, Times, serif;
+	    font-size: 14px;
+	    min-width: 100%;
+	    width: 100%;
+	}
+	
+	#container input[type="text"]:focus {
+	    outline: #D3371E auto 5px;
+	}
+	
+	#container textarea {
+	    padding: 10px;
+	    background: #FFF;
+	    border: 1px solid #D9D9D9;
+	    border-radius: 2px;
+	    -webkit-box-shadow: inset 0px 0px 20px 0px #EEE;
+            box-shadow: inset 0px 0px 20px 0px #EEE;
+	    font-family: 'Andada', Georgia, Times, serif;
+	    font-size: 14px;
+	    width: 100%;
+	    max-width: 100%;
+	    min-height: 100px;
+	}
 
 
 /*  USER ACCOUNT PAGE:   --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
@@ -534,7 +565,6 @@ nav form.search {
 
 #account-blurb {
         width: 220px;
-	background: #DDD;
 	color: #000;
 	font-size: 12px;
 	float: left;
@@ -549,16 +579,37 @@ nav form.search {
         min-width: 220px;
 	min-height: 220px;
 	background: #0E0E0E;
+	border: 1px solid #DDD;
+	border-radius: 2px;
 }
 
 #account-blurb #user-info {
+        margin-top: 10px;
         padding: 10px;
+	background: #E9E9E9;
+	border: 1px solid #E2E2E2;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 #account-main {
-        margin: 0px 20px;
+        padding: 0px;
         float: left;
+	width: 926px;
 }
+
+        #account-main div.account-column {
+	        float: left;
+		width: 422px;
+		padding: 0px 20px;
+	}
+	
+	#account-main h1 {
+	        padding-top: 20px;
+	}
+
+
 
 /*  GALLERY STYLE:       --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
 
@@ -578,13 +629,14 @@ nav form.search {
 	
 	#container #gallery div.column {
 		float: left;
-		width: 356px;
-		padding: 15px;
+		width: 33%;
 		color: #525252;
 		font-family: Georgia, Times, serif;
 		font-size: 14px;
 		line-height: 18px;
 	}
+	
+	#container #gallery div.column-pad { padding: 15px; }
 	
 	#container #gallery div.clear { clear: both; padding: 0; margin: 0; border: 0; }
 
@@ -592,11 +644,11 @@ nav form.search {
 
 aside#sidebar {
     float: left;
-    max-width: 298px;
-    width: 298px;
+    max-width: 368px;
+    width: 368px;
     padding: 20px 15px;
     overflow: hidden;
-    border-left: 1px solid #E4D8CC;
+    border-left: 1px solid #E4E4E4;
 }
 
     aside#sidebar h1 {
@@ -634,8 +686,8 @@ aside#sidebar {
 
     aside#sidebar section.event div.event-description {
 	float: left;
-	max-width: 208px;
-	width: 208px;
+	max-width: 285px;
+	width: 285px;
     }
 
         aside#sidebar section.event div.event-description p { font-size: 90%; line-height: 110%; }
@@ -681,11 +733,11 @@ aside#sidebar {
 
 
 #container article {
-	padding: 0px 20px;
+	padding-right: 20px;
 	font-size: 14px;
 	float: left;
-	max-width: 800px;
-	width: 800px;
+	max-width: 730px;
+	width: 730px;
 	overflow: hidden;
 }
 
@@ -717,7 +769,7 @@ aside#sidebar {
 
 #container div.image-caption img {
 	padding: 20px 0px;
-	max-width: 1100px;
+	max-width: 728px;
 }	
 
 #container div.post-header {
@@ -746,13 +798,14 @@ aside#sidebar {
 #container div.comments{
 	/* Comments DIV tag CSS*/
 	padding: 0px;
+	padding-right: 20px;
 	margin: 20px 0px;
 }
 
 	#container div.comments .form {
 		border-top: 3px solid #D3371E;
 		background: #EEEEEE;
-		width: 1170px;
+		width: 1130px;
 		position: relative;
 	}
 	
@@ -803,13 +856,13 @@ aside#sidebar {
 		color: #585856;
 		background: #EEEEEE;
 		min-height: 100px;
-		max-width: 900px;
-		width: 900px;
+		max-width: 858px;
+		width: 858px;
 		padding: 20px;
 		margin: 0px;
 		border: 1px solid #D8D8D8;
 		-webkit-box-shadow: inset 0px 0px 20px 0px #D8D8D8;
-        box-shadow: inset 0px 0px 20px 0px #D8D8D8;
+		box-shadow: inset 0px 0px 20px 0px #D8D8D8;
 	}
 	
 		#container div.comments .form ::-webkit-input-placeholder, 

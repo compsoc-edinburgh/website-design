@@ -2,7 +2,6 @@
 		<aside id="sidebar">
 		  <h1>Hop on the IRC Bandwaggon</h1>
 		  <p>We have an IRC channel on irc.imaginarynet.org.uk, come along and chat on #compsoc.</p>
-		  
 		  <h1>Events</h1>
 		  
 		  <section class="event">

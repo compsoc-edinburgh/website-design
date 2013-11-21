@@ -41,21 +41,27 @@
 	
 	<section id="gallery">
 		<div class="column">
-			<h3>November STMU</h3>
-			<p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned 
-			some tech talks and stuff...</p>
-			<em>2013-11-29 18:00 to 20:00</em>
+			<div class="column-pad">
+			  <h3>November STMU</h3>
+			  <p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned 
+			    some tech talks and stuff...</p>
+			  <em>2013-11-29 18:00 to 20:00</em>
+			</div>
 		</div>
 		<div class="column">
-			<h3>New New Compsoc Website</h3>
-			<p>Apparently there's a SIG for this but there's a bunch of first years on it so don't get your
-			hopes up... Anyone have experience building sites in Haskell??! <sup>Not even joking<sup>oh god</sup></sup>
-			YAY!</p>
+			<div class="column-pad">
+		          <h3>New New Compsoc Website</h3>
+			  <p>Apparently there's a SIG for this but there's a bunch of first years on it so don't get your
+			    hopes up... Anyone have experience building sites in Haskell??! <sup>Not even joking<sup>oh god</sup></sup>
+			    YAY!</p>
+			</div>
 		</div>
 		<div class="column">
-			<h3>Random Latin because...</h3>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ut lorem 
-			varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla. 
+		        <div class="column-pad">
+			  <h3>Random Latin because...</h3>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ut lorem 
+			  varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla. 
+			</div>
 		</div>
 		<div class="clear"></div>
 	</section><!-- end gallery -->
