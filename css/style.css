@@ -592,8 +592,8 @@ nav form.search {
 
 aside#sidebar {
     float: left;
-    max-width: 299px;
-    width: 299px;
+    max-width: 298px;
+    width: 298px;
     padding: 20px 15px;
     overflow: hidden;
     border-left: 1px solid #E4D8CC;
@@ -634,8 +634,8 @@ aside#sidebar {
 
     aside#sidebar section.event div.event-description {
 	float: left;
-	max-width: 209px;
-	width: 209px;
+	max-width: 208px;
+	width: 208px;
     }
 
         aside#sidebar section.event div.event-description p { font-size: 90%; line-height: 110%; }
