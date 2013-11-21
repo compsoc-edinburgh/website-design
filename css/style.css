@@ -138,35 +138,33 @@ header {
 	header .black { color: #000; }
 
 
-	header #userinfo {
+	header #userpanel {
 	        float: right;
 		height: 101px;
 		width: 300px;
 		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
         }
 	
-	header #userinfo #uname {
+	header #userpanel #uname {
 	        float: left;
 		padding: 20px 30px;
 		height: 61px;
 		width: 174px;
 		text-align: right;
-                text-transform: uppercase;
                 color: #0E0E0E;
         }
 	
-	header #userinfo #uname h3 {
+	header #userpanel #uname h3 {
 	        font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
 		font-size: 18px;
-		text-transform: uppercase;
 		color: #0E0E0E;
 	}
 
-	header #userinfo a {
+	header #userpanel a {
 	        text-decoration: none;
 	}
 	
-	header #userinfo a.button {
+	header #userpanel a.button {
 	        color: #B4B4B4;
 		width: 60px;
 		border: 1px solid #E9E9E9;
@@ -179,14 +177,14 @@ header {
 		margin: 10px 0px;
 	}
 
-	        header #userinfo a.button:hover {
+	        header #userpanel a.button:hover {
 		        color: #646464;
 			background: #E9E9E9;
 			border: 1px solid #E2E2E2;
 		}
 
 	
-	header #userinfo img.avatar {
+	header #userpanel img.avatar {
 	        float: right;
 	        border-radius: 30px;
                 border: 3px solid #D3371E;
@@ -388,7 +386,6 @@ nav form.search {
 		font-size: 30px;
 		font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
 		font-weight: normal;
-		text-transform: uppercase;
 		color: #585856;
 		padding-bottom: 15px;
 		padding-top: 5px;
@@ -401,6 +398,7 @@ nav form.search {
 		text-transform: uppercase;
 		color: #83786E;
 		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 	
 	#container h4, #container h5, #container h6 {
@@ -495,6 +493,26 @@ nav form.search {
 	
 
 
+/* SITE FUNCTION STUFF:  --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
+
+#account-blurb {
+        width: 220px;
+	background: #DDD;
+	color: #000;
+	font-family: 'Andada', Georgia, Times, serif;
+}
+
+#account-blurb h3 {
+        color: #000;
+}
+
+#account-blurb img {
+        min-width: 220px;
+}
+
+#account-blurb #user-info {
+        padding: 10px;
+}
 
 /*  GALLERY STYLE:       --  --  --  --  --  --  --  --  --  --  --  --  --  -- */
 
@@ -591,7 +609,7 @@ nav form.search {
 }
 
 	#container div.post-header h3 {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	#container div.post-header img {

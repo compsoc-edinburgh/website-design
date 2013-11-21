@@ -19,10 +19,10 @@
 	<?php } ?>
 	<header><div id="headwrap">
 		<div id="banner"><!--span class="black">COMP</span><span class="red">SOC</span--></div>
-		<div id="userinfo">
+		<div id="userpanel">
 		        <?php if( !isset( $_GET['logout'])){ ?>
 		        <div id="uname">
-		                <a href="accunt.php"><h3>JR Hacker</h3></a>
+		                <a href="account.php"><h3>JR Hacker</h3></a>
 				<a href="index.php?logout" class="button">Log Out</a>
 			</div>
 		        <a href="account.php"><img src="<?php gravurl(); ?>" class="avatar"/></a>

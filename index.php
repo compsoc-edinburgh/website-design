@@ -71,39 +71,36 @@
 		<article>
 			<div class="post-header">
 				<h1>Home</h1>
-				<h3>by admin, pmorio - published Aug 27, 2013 03:55 AM, last modified Oct 15, 2013 08:50 PM</h3>
+				<h3>This is where post metadata and timestamps will go...</h3>
 			</div>
-			<h2>Welcome to CompSoc's webspace!</h3>
-			<p>Note: This site is brand new and still work-in-progress!</p>
-
-			<p>This is the official website of The University of Edinburgh Artificial Intelligence and Computing Society, aka CompSoc. If you want to know more about who we are please take a look at the about page. The site is completely new, after having lost much of our old one we decided to make a new one!</p>
-
-			<p>Anyway you're probably itching to grab the valuable information and latest updates on CompSoc's activities, so go ahead and explore!</p>
-
-
+			<h2>Welcome to the New New CompSoc Website!</h3>
+			<p>This is just the HTML theme for the site which will be built in Python using the Django framework. Please give constructive criticism and feedback on #compsoc on irc.imaginarynet.org.uk. </p>
+			<h3>Current To-Do List:</h3>
 			<ul>
-				<li>The About page will give you more information on who we are, what we do, and why you should join us!</li>
-				<li>FAQ Page</li>
-				<li>The News page provides the latest in CompSoc acitivites and upcoming events that we host, it is most up to date here!</li>
-				<li>The KnowledgeBase is CompSoc's information portal to all things computing in the University of Edinburgh and stock full with useful information.</li>
-				<li>The KnowledgeBase expands as members contribute to it, much like wikipedia, but much more focused for Edinburgh University Purposes.</li>
-				<li>It has been categorized to ease searching that is relevant to your needs, whether its suggestions and Information on Studying Informatics as a "X" year student, General Computing Knowledge, and Compsoc Related Information for SIGs and those seeking help from CompSoc.</li>
-				<li>It includes super helpful information on getting used to DICE, Setting up a good Workbench (Linux, Windows, MacOs [dont ask Paul]), Book Reviews, TeamWork, Internships, and more! </li>
-				<li>A Users Page where members can search for other members (Privacy can be set at will)</li>
-				<li>Calendar with history of past events, hackathons, trips, etc. and the upcoming ones.</li>
-				<li>IRC page with a quick recommended tutorial on setting up your IRC client and getting connected to CompSoc's IRC.</li>
-				<li>Sponsors Page with details to our Sponsors, and their contributions to our Society.</li>
-				<li>Contact Page for More Detailed Contact Information.</li>
-				<li>HardLibrary for info on CompSoc's Library (IN TESTING)</li>
+				<li>Add a sidebar - I hate doing this in CSS...</li>
+				<li>Themeing for KnowledgeBase and User profiles</li>
 			</ul>
- 
-
-			<p>If you have any questions, particularly if you are a student of the University of Edinburgh, or representative of a University of Edinburgh Society do not hesitate to contact us. We will try to answer your question or requests. CompSoc aims to get people interested in Computing and understanding the impact it has brought, so don't worry we will try not to bite =)</p>
-
-			<p>I hope you will enjoy CompSoc and using this website to get your Computing fix!</p>
-			<p>-Your CompSoc Committee</p>
+			<h3>Stuff you can fiddle with:</h3>
+			<p>The pages Home, About, FAQ, Sponsors and the profile page, got to by clicking the random gravatar in the top right corner.</p>
+			<p>Also, adding ?announce and ?logout to the end of the URLs show the themeing for site announcements and being logged out.</p>
+			
 		</article>
 		
+                <div class="comments">
+                        <div class="form">
+                        <form action="index.php" method="get" >
+                                <div class="meta">
+                                        <h3>Leave a Comment:</h3>
+                                        <span class="detail">You can use <a href="http://daringfireball.net/projects/markdown/syntax" alt="Markdown Syntax list" target=blank>Markdown</a> syntax in your comment.</span>
+                                        <input type="submit" value="Post Comment" />
+                                </div>
+                                <textarea name="Comment" maxlength="10000" required placeholder="Your wonderful and much appreciated comment goes here..."></textarea>
+                                <div class="clear">&nbsp;</div>
+                        </form>
+                        </div>
+                        <!-- Comments! -->
+                </div><!-- end comments -->
+
 		
 		<?php include("footer.php"); ?>
 	</div><!-- end container -->

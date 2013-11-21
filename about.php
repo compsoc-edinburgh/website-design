@@ -57,7 +57,7 @@
                 <p>Spacer Paragraph...</p>
 		<h3>Heading 3</h3>
                 <p>Spacer Paragraph...</p>
-		<h4>[unused] Heading 4</h4>
+		<h4>Heading 4</h4>
                 <p>Spacer Paragraph...</p>
 		<h5>[unused] Heading 5</h5>
                 <p>Spacer Paragraph...</p>
