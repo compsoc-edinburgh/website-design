@@ -6,6 +6,8 @@
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
+        <link rel="apple-touch-icon" type="image/png" hrep="img/compsoc-icon.png">
 
 </head>
 
