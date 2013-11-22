@@ -48,7 +48,7 @@
 	<div id="content">
 		
 	        <div id="account-blurb">
-		  <img src="<?php bigGravUrl(); ?>" alt="Profile Picture" />
+		  <img src="<?php bigGravURL(); ?>" alt="Profile Picture" />
 		  <div id="user-info">
 		  <h2>JR Hacker</h2>
 		  <p>
@@ -104,7 +104,8 @@
                     <table><tbody>
                         <tr><td>Username</td><td>JRHacker</td></tr>
                         <tr><td>First Name</td><td><input type="text" name="fname" value="JR"></input></td></tr>
-                        <tr><td>Second Name</td><td><input type="text" name="fname" value="Hacker"></td></tr>
+                        <tr><td>Second Name</td><td><input type="text" name="fname" value="Hacker"></input></td></tr>
+			<tr><td>Matriculation No.</td><td><input type="text" name="matric" value="s9212345"></input></td></tr>
                         <tr><td>Primary Email</td><td><input type="text" name="pemail" value="jrhacker@catb.org"></input></td></tr>
 			<tr><td>Secondary Email</td><td><a href="account.php" class="button">Add...</a></td></tr>
 			<tr><td>IRC Nick</td><td><input type="text" name="ircnick" value="jrh"></input></td></tr>
@@ -135,7 +136,8 @@
            }
 	   function bigGravURL() {
              $hash = md5( strtolower( trim( genRandomString() ) ) );
-             echo "http://www.gravatar.com/avatar/" . $hash . ".jpg?s=220&d=retro";
+             //$hash = md5( strtolower( trim( "compsoc@toaster.cc" )));
+	     echo "http://www.gravatar.com/avatar/" . $hash . ".jpg?s=220&d=retro";
            }
 	?>
 	
