@@ -1,0 +1,62 @@
+/**
+ * C O M P S O C    B O O T S T R A P    C S S    O V E R R I D E
+ *
+ **/
+
+/**
+ * COLOURS:
+ * red          : #D3371E
+ * official red : #CE0E00
+ * blue         : #00497F
+ * accent       : #D5D5D5
+ * beige        : #83786E
+ * lbeige       : #E4D8CC
+ * lgrey        : #F7F7F7
+ * dgrey        : #E4E4E4
+ * body text    : #585856
+**/
+
+body {
+    background: #E9E9E9;
+    font-family: Arial,"MS Sans Serif","Geneva",sans-serif;
+    font-size: 14px;
+    color: #585856;
+}
+
+
+.header {
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    background: #F9F9F9;
+}
+
+    .header .container {
+	padding: 0px;
+	height: 100px;
+	background-image: url("../img/compsoc.png");
+	background-repeat: no-repeat;
+	background-position: 35px center;
+    }
+
+
+
+.navbar {
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    background: #DDDDDD;
+    margin: 0;
+    border: 0;
+}
+
+    .navbar .container {
+	height: 50px;
+	min-height: 50px;
+    }
+
+
+.content .container {
+    background: #F9F9F9;
+    padding: 20px 30px;
+}
