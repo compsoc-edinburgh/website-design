@@ -46,38 +46,6 @@
 	  
       </div>
     </header>
-
-
-    <!--nav class="navbar">
-      <div class="container">
-	<div class="row">
-	  <div class="col-sm-10">
-            <ul class="nav nav-pills">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#">About</a></li>
-	      <li><a href="#">FAQ</a></li>
-	      <li><a href="#">KnowledgeBase</a></li>
-	      <li><a href="#">News</a></li>
-	      <li><a href="#">Contact</a></li>
-	      <li><a href="#">Sponsors</a></li>
-	      <li><a href="#">HardLibrary</a></li>
-	      <li><a href="#">Join CompSoc</a></li>
-	      <li><a href="#">EGM</a></li>
-	    </ul>
-	  </div>
-
-	  <div class="col-sm-2">
-	    <form class="navbar-form" action="#" method="POST" role="search">
-	      <div class="form-group">
-		<input class="nav-search form-control" type="text" name="search">
-	      </div>
-	    </form>
-	  </div>
-	</div>
-	<div style="clear: both;"></div>
-      </div>
-    </nav-->
-
     
     <nav class="navbar navbar-compsoc">
       <div class="container">
@@ -116,10 +84,6 @@
           </ul>
 	  <!-- Navbar Search -->
           <div class="nav navbar-nav navbar-right">
-            
-	    
-	    
-	    
           </div>
         </div>
       </div>
@@ -132,6 +96,12 @@
     <div class="content">
       <div class="container">
 	
+	<!--[if lte IE 7]><div id="i-hate-ie">
+	        <h3>WE LOVE HTML5, CSS3 AND KITTENS!</h3>
+                <p>Your browser, unfortunately, doesn't and we can't be bothered to write special CSS and stuff just so it works in fossilised browsers...</p>
+	        <p>So maybe invest in something free like Chrome, Firefox and not IE!</p>
+	</div><![endif]-->
+
 	<!-- Optional 3 column gallery: -->
 	<section class="gallery row">
 	  
@@ -164,10 +134,10 @@
 	  
 	  <article>
 	    <div class="post-header">
-	        <h1>HTML CSS Layout test:</h1>
+	        <h1>Tags and Bootstrap</h1>
 		  <h3>Just so you can see what the CSS does...</h3>
 		  </div>
-	    <p>The title is wrapped in a div with class post-header, which modifies the formatting a little</p>
+	    <p>The title is wrapped in a div with class post-header, which modifies the formatting a little, shrinking the H3 tag which is like a little post blurb for timestamps...</p>
 	    <h1>Heading 1</h1>
 	    <p>Spacer Paragraph...</p>
 	    <h2>Heading 2</h2>
@@ -181,10 +151,10 @@
 		<h6>[unused] Heading 6</h6>
                 <p>Spacer Paragraph...</p>
 		<hr/>
-		<p>Horizontal rule, &lt;hr/&gt; above</p>
+		<p>Horizontal rule, <code>&lt;hr/&gt;</code> above</p>
 		<blockquote>If there are developers in the audience you'll know this: Developers have the attention spans of slightly moronic woodland creatures. There's not much going on; they want to work on the next thing. Giving them another week is just going to add frustration to everything.
 		  <cite>Linus Torvalds, LinuxCon Europe 2013</cite></blockquote>
-		<p>Block Quote, &lt;blockquote&gt;...&lt;cite&gt;&lt;/cite&gt;&lt/blockquote&gt;</p>
+		<p>Block Quote, <code>&lt;blockquote&gt;...&lt;cite&gt;...&lt;/cite&gt;&lt/blockquote&gt;</code></p>
 		<p>Inline quotes are slightly different: <q>Developers have the attention spans of slightly moronic woodland creatures.</q> but are still useful. &lt;q&gt;&lt;/q&gt;</p>
 		
 		<p>Hyperlinks, i.e. &lt;a&gt; tags are fairly simple: <a href="http://www.google.co.uk">Google UK</a> with respect to their styling</p>
@@ -194,7 +164,7 @@
 		  <div class="panel-body">
 		    <img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
 		  </div>
-		  <div class="panel-footer">
+		  <div class="panel-footer centre">
 		    With the caption content rendering in the panel-footer &lt;div&gt;.
 		  </div>
 		</div>
@@ -202,22 +172,23 @@
 		<p>Which is different to how images normally render, here kindly demonstrated by Amazon; By default, they render as blocks that are centred.</p>
 		<img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" />
 
-		<p>iframes have a little bit of customisation, i.e. they're forced into 100% width. This may change:</p>
+		<p>iframes are just normal:</p>
 		<iframe width="420" height="315" src="//www.youtube.com/embed/jjRAKuis7T8" frameborder="0" allowfullscreen></iframe>
 
-		<p>In HTML 5 &lt;b&gt; (bold) has been replaced with &lt;strong&gt; and &lt;i&gt; (itlaics) has been replaced with &lt;em&gt; (emphasis). Ol tags still render but we're not using them.</p>
+		<p>In HTML 5 &lt;b&gt; (bold) has been replaced with &lt;strong&gt; and &lt;i&gt; (itlaics) has been replaced with &lt;em&gt; (emphasis). Old tags still render but we're not using them.</p>
 		<p>So, some bold text using the strong tags looks like: <strong>this</strong> whilst using the old b tags looks like <b>this</b>, i.e. is deprecated in most browsers.</p>
 		<p>Similarly, the emphasis tage gives test like <em>this</em> and the old i tag gives <i>this</i>, which is again deprecated as we're using HTML5</p>
 		<p>The &lt;sup&gt; and &lt;sub&gt; tags are also available for <sup>superscript</sup> and <sub>subscript</sub> text, and are chainable <sup>for people<sup> who reddit too much<sup>Ahhhhh!</sup></sup></sup> But they do mess up the line heights a bit...</p>
-		<p>There are other 'semantic' HTML5 tags, like <small>small (Does nothing)</small>, <ins>ins for inserted text</ins>, <del>del for deleted text</del>, and <mark>mark</mark> to mark/hilight text. There's custom css for text selection, that <span style="color: #fff; background: #f57870;">makes it look like this.</span></p>
+		<p>There are other 'semantic' HTML5 tags, like <small>small</small>, <ins>ins for inserted text</ins>, <del>del for deleted text</del>, and <mark>mark</mark> to mark/hilight text. There's custom css for text selection, that <span style="color: #fff; background: #f57870;">makes it look like this.</span></p>
+		<p>Use &lt;aside&gt; for non-main content like sidebars, and use &lt;article&gt; for articles, posts, main content, etc. and &lt;section&gt; for breaking up articles, and stuff like events. They behave the same as &lt;div&gt; tags but are better from an SEO perspective. </p>
 
-		<table><thead><tr><td>Double Column</td><td>Tables</td></tr></thead>
+		<table class="table"><thead><tr><td>Double Column</td><td>Tables</td></tr></thead>
 		  <tbody><tr><td>Top Left</td><td>Top Right</td></tr>
 		    <tr><td>Middle Left</td><td>Middle Right</td></tr>
 		    <tr><td>Bottom Left</td><td>Bottom Right</td></tr>
 		    </tbody></table>
 		<p>Various table formats</p>
-		<table><thead><tr><td>Triple</td><td>Column</td><td>Tables</td></tr></thead>
+		<table class="table"><thead><tr><td>Triple</td><td>Column</td><td>Tables</td></tr></thead>
 		  <tbody>
 		    <tr><td>Top Left</td><td>Top Middle</td><td>Top Right</td></tr>
 		    <tr><td>Middle Left</td><td>Middle Middle</td><td>Middle Right</td></tr>
@@ -277,13 +248,13 @@ moeb f x = go where go = f ($ go) x
 </pre>
 		<p>We also have footnotes, which should be auto generated??</p>
 		
-		<div class="footnotes">
+		<div class="footnote">
 		  <ol>
-		      <li>These are fairly self-explanatory</li>
-		        <li>Just your run of the mill footnotes...</li>
-			  <li>You've seen these before</li>
-			  </ol>
-		  </div>
+		    <li>These are fairly self-explanatory</li>
+		    <li>Just your run of the mill footnotes...</li>
+		    <li>You've seen these before</li>
+		  </ol>
+		</div>
 		
 		</article>
 	  
@@ -296,6 +267,40 @@ moeb f x = go where go = f ($ go) x
 	    <p>We have an IRC channel on irc.imaginarynet.org.uk, come along and chat on #compsoc.</p>
 	    
 	    <h1>Events</h1>
+	    
+	    <section class="event">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="event-cal">
+                    <div class="event-date"><span class="event-date-day">Fri</span> <span class="event-date-num">29th</span> <span class="event-date-mon">Nov 2013</span></div>
+                    <div class="event-time">18:00</div>
+                  </div>
+                </div>
+                <div class="col-xs-9">
+                  <div class="event-description">
+                    <h2>November STMU</h2>
+                    <p>The monthly Student Tech Meetup for November: We have a line of speakers arranged for you and of course free pizza!</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="event">
+              <div class="row">
+		<div class="col-xs-3">
+		  <div class="event-cal">
+                    <div class="event-date"><span class="event-date-day">Tue</span> <span class="event-date-num">26th</span> <span class="event-date-mon">Nov 2013</span></div>
+                    <div class="event-time">20:00</div>
+		  </div>
+		</div>
+		<div class="col-xs-9">
+		  <div class="event-description">
+		    <h2>Weekly Social</h2>
+                    <p>Pop down to Bar 50 on the Cowgate and have a chat, food, drink, whatever!</p>
+		  </div>
+		</div>
+	      </div>
+            </section>	    
 	    
 	  </aside>
 	</div>

@@ -1,9 +1,7 @@
 /**
  * C O M P S O C    B O O T S T R A P    C S S    O V E R R I D E
  *
- **/
-
-/**
+ *
  * COLOURS:
  * red          : #D3371E
  * official red : #CE0E00
@@ -14,6 +12,7 @@
  * lgrey        : #F7F7F7
  * dgrey        : #E4E4E4
  * body text    : #585856
+ *
 **/
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Andada|Fjalla+One);
@@ -89,6 +88,7 @@ body {
     border: 0;
     background: #DDDDDD;
     font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+    font-size: 16px;
 }
  /* Navbar Resets */
 .navbar-compsoc > .container { padding-left: 0; }
@@ -97,103 +97,87 @@ body {
 .navbar-compsoc .navbar-toggle { border-color: #BCBCBA; }
 .navbar-compsoc .navbar-toggle .icon-bar { background: #585856; }
 .navbar-compsoc .navbar-toggle .icon-bar + .icon-bar { margin-top: 4px; }
+.navbar-compsoc .caret { border-top-color: #111; border-bottom-color: #111; }
+.navbar-compsoc a:hover .caret,
+.navbar-compsoc a:focus .caret,
+.navbar-compsoc .open > a .caret,
+.navbar-compsoc .open > a:hover .caret,
+.navbar-compsoc .open > a:focus .caret  { border-top-color: #EEE; border-bottom-color: #EEE; }
+.navbar-compsoc .caret { margin-left: 5px; }
+
+.navbar-compsoc .navbar-collapse {
+    max-height: none;
+}
 
 .navbar-compsoc li > a,
 .navbar-compsoc li.active > a {
     color: #111;
+    height: 50px;
+}
+
+.navbar-compsoc .dropdown-menu li > a {
+    height: auto;
 }
 
 .navbar-compsoc li > a:focus,
-.navbar-compsoc li > a:hover,
-.navbar-compsoc li.active > a:hover {
+.navbar-compsoc li > a:hover {
     color: #EEE;
-    border-bottom: 3px solid #D3371E;
-    height: 50px;
 }
 
-.navbar-compsoc li.active {
-    border-bottom: 3px solid #D3371E;
-    height: 50px;
-}
-
-/*.navbar {
-    min-height: 50px;
-    background: #DDDDDD;
-    margin: 0;
-    border: 0;
-    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
-}
-
-    .navbar > .container {
-	min-height: 50px;
-	padding: 0px;
-    }
-
-.navbar .nav-pills > li > a,
-.navbar .nav-pills > li > a:focus,
-.navbar .nav-pills > li > a:hover,
-.navbar .nav-pills > li.active > a,
-.navbar .nav-pills > li.active > a:focus,
-.navbar .nav-pills > li.active > a:hover {
-    display: block;
-    line-height: 48px;
-    height: 50px;
-    border-radius: 0px;
-    background: none;
-    color: #0E0E0E;
-    padding: 0px 15px;
-    font-size: 16px;
-}
-
-.navbar .nav-pills > li.active > a {
-    background: none;
-    color: #0E0E0E;
-}
-
-.navbar .nav-pills > li + li {
-    margin: 0px;
-}
-
-.navbar .nav-pills > li.active > a {
-    border-bottom: 3px solid #D3371E;
-}
-
-.navbar .nav-pills > li > a:hover,
-.navbar .nav-pills > li > a:active,
-.navbar .nav-pills > li.active > a:hover,
-.navbar .nav-pills > li.active > a:focus {
+.navbar-compsoc .dropdown-menu > li > a:hover,
+.navbar-compsoc .dropdown-menu > li > a:active {
     background: #585856;
-    color: #EEEEEE;
 }
-*/
 
-/*  Navigation search box restyling: */
-/*
-.navbar-form,
-.navbar-form .form-group {
+.navbar-compsoc li.active > a {
+    border-bottom: 3px solid #D3371E;
+}
+
+.navbar-compsoc ul.dropdown-menu {
+    background-color: #DDDDDD;
+    border: 0;
     padding: 0px;
-    padding-left: 5px;
-    width: 100%;
 }
 
-.navbar-form .form-control {
-    font-family: 'Andada', Georgia, Times, serif;
-    font-size: 13px;
-    background: #EEE;
-    width: 100%;
-    max-width: 200px;
-    -webkit-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
-    -moz-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
-    box-shadow: inset 0px 0px 20px 0px #E0E0E0;
-    border: 1px solid #D8D8D8;
-    border-radius: 2px;
+.navbar-compsoc .open > a {
+    color: #EEE;
 }
 
-    .navbar-form .form-control:focus {
-	background: #F8F8F8;
+/* Slightly different for collapsable Menu: */
+@media (max-width: 768px) {
+    
+    .navbar-compsoc .navbar-collapse {
+	padding-left: 30px;
+	padding-bottom: 20px;
+    }
+    
+    .navbar-compsoc li.active > a {
+	background: #C6C6C6;
+	border: 0;
     }
 
-*/
+    .navbar-compsoc li > a:hover,
+    .navbar-compsoc li > a:active {
+	color: #111;
+	background: #C6C6C6;
+    }
+    
+    .navbar-compsoc .dropdown-menu > li > a:hover,
+    .navbar-compsoc .dropdown-menu > li > a:active {
+	background: #C6C6C6;
+    }
+    
+    .navbar-compsoc .open > a,
+    .navbar-compsoc .open > a:hover,
+    .navbar-compsoc .open > a:focus { 
+	color: #111;
+	background: #C6C6C6;
+    }
+    
+
+}
+
+
 
 /*  CONTENT STYLES  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
 
@@ -289,3 +273,185 @@ footer {
     text-transform: uppercase;
     font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
 }
+
+
+/*  FORMATTING  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
+
+/* NB: Some are targeted just at the div.main class */
+/* Most of these are tags, but some are Bootstrap Classes */
+
+blockquote {
+    font-family: 'Andada', Georgia, Times, serif;
+    font-size: 16px;
+    color: #413C37;
+    border-left: 5px solid #E4E4E4;
+}
+
+    blockquote cite {
+	padding: 10px 0px 0px 5px;
+	display: block;
+	font-size: 80%;
+	font-style: italic;
+    }
+
+
+/* ADDED CLASS: Centres Blocks and Text */
+.centre { text-align: center; margin: 0px auto; }
+
+
+code {
+    background: #E9E9E9;
+    font-size: inherit;
+}
+
+
+dl {
+        display: block;
+        padding: 0px 10px 20px 10px;
+        margin-top: 10px;
+        border-top: 3px solid #E4E4E4;
+        color: #808080;
+}
+
+dt {
+        font-size: 110%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+	font-weight: normal;
+	color: #111;
+}
+        dt::after { content: " :~"; }
+
+dd {
+        font-size: 90%;
+        text-indent: 20px;
+}
+
+
+/* ADDED CLASS: Nice calendary date render */
+.event {
+    clear: both;
+    display: block;
+    padding-bottom: 10px;
+}
+
+    .event .event-cal {
+	width: 100%;
+	line-height: 1.1;
+	float: left;
+	background: #DDD;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	color: #111;
+	margin-right: 10px;
+	text-align: center;
+    }
+    
+    .event h2 {
+	color: #585858;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	margin: 0;
+    }
+    
+    .event .event-description p { font-size: 90%; line-height: 110%; }
+    .event .event-date { padding: 5px; }
+    .event .event-date-day { display: block; font-size: 100%; }
+    .event .event-date-num { display: block; font-size: 150%; }
+    .event .event-date-mon { display: block; font-size: 70%; }
+    .event .event-time {
+        padding: 5px;
+        background: #EEE;
+        border-top: 1px solid #CCC;
+    }
+
+/* ADDED CLASS: Renders a div.footnote as references/ sources */
+.footnote {
+    display: block;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-top: 1px solid #D3371E;
+    color: #808080;
+    font-size: inherit;
+    font-style: italic;
+}
+
+
+hr {
+    padding: 5px 0px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid #E0E0E0;
+}
+
+
+.main iframe { margin: 10px 0px; width: 100% !important; }
+
+
+.main img { margin: 0px auto; }
+
+
+ol ol {
+    list-style: lower-latin;
+}
+
+ol ol ol {
+    list-style: lower-roman;
+}
+
+
+pre {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111;
+    padding: 20px 15px;
+    margin: 10px 0px;
+    background: #E9E9E9;
+    border: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-left: 1px solid #D3371E;
+}
+
+
+table.table {
+    border-top: 3px solid #E0E0E0;
+}
+
+table.table thead {
+    font-size: 120%;
+    font-family: 'Andada', Georgia, Times, serif;
+}
+
+table.table tr {
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px dashed #E0E0E0;
+}
+
+table.table td {
+    border-right: 1px dashed #E0E0E0;
+}
+
+
+
+
+#i-hate-ie {
+    padding: 40px 40px;
+    background: #080808;
+    color: #FFF;
+
+}
+    #i-hate-ie h3 {
+        color: #FFF;
+        font-size: 60px;
+    }
+    #i-hate-ie p {
+        padding: 0;
+        margin: 0;
+        font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+        font-size: 16px;
+    }
