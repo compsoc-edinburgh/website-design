@@ -142,7 +142,9 @@
 		      </ol></li>
 		  </ol></li>
 		</ol>
-
+		
+		<p>There is the &lt;code&gt; tage for <code>Inline code</code>, as well as the Pre:</p>
+		
 		<p>Preformatted code blocks: &lt;pre&gt; &lt;/pre&gt;</p>
 		<pre>
 Note that html in pres will still be rendered; e.g. <q>a quote</q>

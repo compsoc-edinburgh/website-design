@@ -16,6 +16,40 @@
  * body text    : #585856
 **/
 
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Andada|Fjalla+One);
+/* Import three fonts: Fjalla, an impact-like heading font; Andada, a nice serif and Ubuntu mono. */
+
+/* Custom WebKit scrollbars because why not... */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(211,55,30,0.8);    
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(88,88,86,0.8); 
+}
+
+
+/* GENERIC TAGS  --   --   --   --    --   --    --   --    --   --    --   --    --   --    --   --    --   --    --   --    */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1, h2, h3 { font-family: 'Fjalla One', Impact, Helvetica, Helvetiva-Neue, sans-serif; }
+h1 { color: #D3371E; }
+h2 { color: #585856; }
+h3 { color: #83786E; text-transform: uppercase;}
+h4, h5, h6 { font-family: 'Andada', Georgia, Times, serif; }
+
+
+::selection { background: #F57870; color: #FFF; }
+mark, .mark { background: #F57870; color: #FFF; }
+
 body {
     background: #E9E9E9;
     font-family: Arial,"MS Sans Serif","Geneva",sans-serif;
@@ -23,6 +57,8 @@ body {
     color: #585856;
 }
 
+
+/* HEADER STYLE  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
 
 .header {
     height: 100px;
@@ -34,29 +70,222 @@ body {
     .header .container {
 	padding: 0px;
 	height: 100px;
-	background-image: url("../img/compsoc.png");
-	background-repeat: no-repeat;
-	background-position: 35px center;
+    }
+    
+    .header .header-img {
+	width: 269px;
+	height: 100px;
+	max-height: 100px;
+	padding: 29.5px 0px;
+	padding-left: 35px;
     }
 
 
 
-.navbar {
+/*  NAVIGATION STYLES  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
+
+.navbar-compsoc {
+    margin: 0;
+    border: 0;
+    background: #DDDDDD;
+    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+}
+ /* Navbar Resets */
+.navbar-compsoc > .container { padding-left: 0; }
+.navbar-compsoc .navbar-collapse { padding-left: 0; }
+.navbar-compsoc .navbar-nav { margin: 0; }
+.navbar-compsoc .navbar-toggle { border-color: #BCBCBA; }
+.navbar-compsoc .navbar-toggle .icon-bar { background: #585856; }
+.navbar-compsoc .navbar-toggle .icon-bar + .icon-bar { margin-top: 4px; }
+
+.navbar-compsoc li > a,
+.navbar-compsoc li.active > a {
+    color: #111;
+}
+
+.navbar-compsoc li > a:focus,
+.navbar-compsoc li > a:hover,
+.navbar-compsoc li.active > a:hover {
+    color: #EEE;
+    border-bottom: 3px solid #D3371E;
     height: 50px;
+}
+
+.navbar-compsoc li.active {
+    border-bottom: 3px solid #D3371E;
+    height: 50px;
+}
+
+/*.navbar {
     min-height: 50px;
-    max-height: 50px;
     background: #DDDDDD;
     margin: 0;
     border: 0;
+    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
 }
 
-    .navbar .container {
-	height: 50px;
+    .navbar > .container {
 	min-height: 50px;
+	padding: 0px;
+    }
+
+.navbar .nav-pills > li > a,
+.navbar .nav-pills > li > a:focus,
+.navbar .nav-pills > li > a:hover,
+.navbar .nav-pills > li.active > a,
+.navbar .nav-pills > li.active > a:focus,
+.navbar .nav-pills > li.active > a:hover {
+    display: block;
+    line-height: 48px;
+    height: 50px;
+    border-radius: 0px;
+    background: none;
+    color: #0E0E0E;
+    padding: 0px 15px;
+    font-size: 16px;
+}
+
+.navbar .nav-pills > li.active > a {
+    background: none;
+    color: #0E0E0E;
+}
+
+.navbar .nav-pills > li + li {
+    margin: 0px;
+}
+
+.navbar .nav-pills > li.active > a {
+    border-bottom: 3px solid #D3371E;
+}
+
+.navbar .nav-pills > li > a:hover,
+.navbar .nav-pills > li > a:active,
+.navbar .nav-pills > li.active > a:hover,
+.navbar .nav-pills > li.active > a:focus {
+    background: #585856;
+    color: #EEEEEE;
+}
+*/
+
+/*  Navigation search box restyling: */
+/*
+.navbar-form,
+.navbar-form .form-group {
+    padding: 0px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.navbar-form .form-control {
+    font-family: 'Andada', Georgia, Times, serif;
+    font-size: 13px;
+    background: #EEE;
+    width: 100%;
+    max-width: 200px;
+    -webkit-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+    -moz-box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+    box-shadow: inset 0px 0px 20px 0px #E0E0E0;
+    border: 1px solid #D8D8D8;
+    border-radius: 2px;
+}
+
+    .navbar-form .form-control:focus {
+	background: #F8F8F8;
+    }
+
+*/
+
+/*  CONTENT STYLES  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
+
+.content > .container {
+    background: #F9F9F9;
+    padding: 20px 30px;
+}
+
+.gallery {
+    padding: 0px 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px dashed #E4D8CC;
+    margin-left: -30px;
+    margin-right: -30px;
+    /* Override some .row properties so 
+       the border styles correctly */
+    font-family: 'Andada', Georgia, Times, serif;
+}
+
+    .gallery h3 {
+	color: #111;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
     }
 
 
-.content .container {
-    background: #F9F9F9;
-    padding: 20px 30px;
+.main {
+    padding: 30px 0px;
+}
+
+.main .post-header {
+    margin-bottom: 20px;
+}
+
+    .main .post-header h3 {
+	font-size: 12px;
+    }
+
+
+/*  SIDEBAR:  -- -- -- -- -- -- -- -- -- */
+
+.sidebar {
+    border-left: 1px solid #E4E4E4;
+    padding: 15px;
+}
+
+    .sidebar h1 {
+	color: #111;
+	font-size: 20px;
+	margin: 10px 0px;
+    }
+
+
+/*  ANNOUNCE STYLE:  -- -- -- -- -- -- -- -- -- -- */
+
+.announce {
+    padding: 0;
+    color: #EEE;
+    background: #080808;
+    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.announce > .container {
+    padding: 0px;
+}
+
+.announce .alert {
+    background: none;
+    border: 0;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+    .announce .alert-success { color: #DFF0D8; }
+    .announce .alert-info { color: #EEEEEE; }
+    .announce .alert-warning { color: #FAEBCC; }
+    .announce .alert-danger { color: #EBCCD1; }
+
+/*  FOOTER STYLE  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
+
+footer {
+    background: #DDD;
+    border-top: 3px solid #D3371E;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    color: #0E0E0E;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
 }

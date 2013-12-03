@@ -94,25 +94,21 @@
           <ul class="nav navbar-nav">
             
             
-	    <li class="active"><a href="#">Home</a></li>
-	    <li><a href="#">About</a></li>
-	    <li><a href="#">FAQ</a></li>
-	    <li class="dropdown">
-	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowledgeBase<b class="caret"></b></a>
-	      <ul class="dropdown-menu">
-		<li><a href="#">How to write an Article</a></li>
-		<li><a href="#">Article Guidelines</a></li>
-		<li><a href="#">Markdown Syntax</a></li>
-		<li><a href="#">Links</a></li>
-		<li><a href="#">IRC</a></li>
-	      </ul>
-	    </li>
-	    <li><a href="#">News</a></li>
-	    <li><a href="#">Contact</a></li>
-	    <li><a href="#">Sponsors</a></li>
-	    <li><a href="#">HardLibrary</a></li>
-	    <li><a href="#">Join CompSoc</a></li>
-	    <li><a href="#">EGM</a></li>
+	    
+	    
+	    
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
           </ul>
 	  <!-- Navbar Search -->
           <div class="nav navbar-nav navbar-right">
@@ -189,18 +185,14 @@
 		
 		<p>Hyperlinks, i.e. &lt;a&gt; tags are fairly simple: <a href="http://www.google.co.uk">Google UK</a> with respect to their styling</p>
 		
-		<p>There's some special formatting for images as well: a &lt;div class="panel panel-default"&gt; conaining two divs with class panel-body and panel-footer will render like:</p>
-		<div class="panel panel-default">
-		  <div class="panel-body">
-		    <img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
-		  </div>
-		  <div class="panel-footer">
-		    With the caption content rendering in the panel-footer &lt;div&gt;.
-		  </div>
-		</div>
+		<p>There's some special formatting for images as well: a &lt;div class="image-caption"&gt; conaining an &lt;img /&gt; tag and a &lt;p&gt;&lt/p&gt; will render like:</p>
+		<div class="image-caption">
+		    <img src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
+		      <p>With the caption content rendering in the paragraph tag</p>
+		      </div>
 		
 		<p>Which is different to how images normally render, here kindly demonstrated by Amazon; By default, they render as blocks that are centred.</p>
-		<img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" />
+		<img src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" />
 
 		<p>iframes have a little bit of customisation, i.e. they're forced into 100% width. This may change:</p>
 		<iframe width="420" height="315" src="//www.youtube.com/embed/jjRAKuis7T8" frameborder="0" allowfullscreen></iframe>
