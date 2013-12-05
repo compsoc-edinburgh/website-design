@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <title>COMPSOC</title>
+    <title>COMPSOC - University of Edinburgh Computer Science Society</title>
     
     <meta charset="utf=8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/override.css">
     
     <link rel="icon" type="image/ico" href="img/favicon.ico">
@@ -94,7 +94,7 @@
     <div class="content">
       <div class="container">
 	
-	<!--[if lte IE 7]><div id="i-hate-ie">
+	<!--[if lte IE 8]><div id="i-hate-ie">
 	        <h3>WE LOVE HTML5, CSS3 AND KITTENS!</h3>
                 <p>Your browser, unfortunately, doesn't and we can't be bothered to write special CSS and stuff just so it works in fossilised browsers...</p>
 	        <p>So maybe invest in something free like Chrome, Firefox and not IE!</p>
@@ -105,27 +105,47 @@
 	  
 	  <div class="col-sm-4">
 	    <h3>November STMU</h3>
-	    <p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned some tech talks and stuff...</p>
-	    <em>2013-11-29 18:00 to 20:00</em>
+	    <div class="row">
+	      <div class="col-xs-4 col-sm-12 col-md-5">
+		<img class="img-responsive img-circle img-thumbnail centre" src="img/xmas-cats.jpg">
+	      </div>
+	      <div class="col-xs-8 col-sm-12 col-md-7">
+		<p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned some tech talks and stuff...</p>
+		<em>2013-11-29 18:00 to 20:00</em>
+	      </div>
+	    </div>
 	  </div>
 	  
 	  <div class="col-sm-4">
             <h3>New New Compsoc Website</h3>
-	    <p>Apparently there's a SIG for this but there's a bunch of first years on it so don't get your
-	      hopes up... Anyone have experience building sites in Haskell??! <sup>Not even joking<sup>oh god</sup></sup>
-	      YAY!
-	    </p>
+	    <div class="row">
+	      <div class="col-xs-4 col-sm-12 col-md-5">
+		<img class="img-responsive img-circle img-thumbnail centre" src="img/horse-onesie.jpg">
+	      </div>
+	      <div class="col-xs-8 col-sm-12 col-md-7">
+		<p>Apparently there's a SIG for this but there's a bunch of first years on it so don't get your
+		  hopes up... Anyone have experience building sites in Haskell??! <sup>Not even joking<sup>oh god</sup></sup>
+		  YAY!</p>
+	      </div>
+	    </div>
 	  </div>
 	  
 	  <div class="col-sm-4">
             <h3>Random Latin Because...</h3>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ut lorem varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla.</p>
+	    <div class="row">
+	      <div class="col-xs-4 col-sm-12 col-md-5">
+		<img class="img-responsive img-circle img-thumbnail centre" src="img/gent-cat.jpg">
+	      </div>
+	      <div class="col-xs-8 col-sm-12 col-md-7">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ut lorem varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla.</p>
+	      </div>
+	    </div>
 	  </div>
 	  
 	</section>
 	
 	<!-- Main content and Sidebar: -->
-	<div class="main row">
+	<div class="main row" role="main">
 	  <div class="col-sm-8">
 	    
 	  <!-- MAIN PAGE CONTENT:  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   -->
@@ -133,9 +153,59 @@
 	  <article>
 	    <div class="post-header">
 	        <h1>Tags and Bootstrap</h1>
-		  <h3>Just so you can see what the CSS does...</h3>
-		  </div>
+		<h3>Just so you can see what the CSS does...</h3>
+	    </div>
+	    <p>All of the bootstrap stuff ins available, most of it isn't restyled. There is a config.json with all the changed settings from default Bootstrap.</p>
 	    <p>The title is wrapped in a div with class post-header, which modifies the formatting a little, shrinking the H3 tag which is like a little post blurb for timestamps...</p>
+	    
+	    <h1>Added Classes:</h1>
+	    <h2>Events</h2>
+	    <p>A couple of classes have been added to do compsoccy things, like events, demonstrated by the <q>STMU</q> and <q>Weekly Social</q> in the sidebar...</p>
+	    <p>Code for an event is as follows:</p>
+	    <pre>
+&lt;section class="event"&gt;
+    &lt;div class="event-cal"&gt;
+        &lt;div class="event-date"&gt;
+            &lt;span class="event-date-day"&gt;Wed&lt;/span&gt; 
+            &lt;span class="event-date-num"&gt;25th&lt;/span&gt; 
+            &lt;span class="event-date-mon"&gt;Dec&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="event-time"&gt;13:37&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="event-description"&gt;
+        &lt;h2&gt;Heading 2&lt;/h2&gt;
+        &lt;p&gt;Paragraph describing the event, where it is and what's happening.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="clear: both;"&gt;&lt;/div&gt;
+&lt;/section&gt;
+	    </pre>
+	    
+	    <h2>Gallery</h2>
+	    <p>A <code>div.gallery</code> class has also beed added to provide a full width bar at the top of the page for columns, demonstrated here with the three column paragraphs at the top. 
+	      It changes to the serif font 'Andada', and restyles the <code>&lt;h3&gt;</code> tag to be smaller, darker and capitalised.</p>
+	    
+	    <h2>Site Announcements</h2>
+	    <p>Using some restyled Bootsratp alerts you can add a small sentence to the top of the page. This HTML would go before the <code>&lt;header&gt;</code></p>
+	    <pre>
+&lt;aside class="announce"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="alert alert-info alert-dismissable"&gt;
+          Hey Guys! Just a heads-up on the upcoming STMU this Friday in AT 4.04!
+          &lt;button type="button" class="close" data-dismiss="alert" &gt;&times;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/aside&gt;
+	    </pre>
+	    
+	    <h2>Padding</h2>
+	    <p>There are classes <code>.pad-5, .pad-10, .pad-15, .pad-20, .pad-30</code> that add 5, 10, 15, 20, 30 px of padding all round to an object. 
+	      Similarly, there are the classes <code>.mar-5, .mar-10, .mar-15, .mar-20, .mar-30</code> that add a margin. <code>.pad-lr-*</code> & <code>.mar-lr-*</code> apply
+	    the padding/ margin to only the left and right of the object.</p>
+	    
+	    <p>Also the class <code>.centre</code> has been added that centres both block and text elements.</p>
+	    
+	    <hr />
+
 	    <h1>Heading 1</h1>
 	    <p>Spacer Paragraph...</p>
 	    <h2>Heading 2</h2>
@@ -267,36 +337,25 @@ moeb f x = go where go = f ($ go) x
 	    <h1>Events</h1>
 	    
 	    <section class="event">
-              <div class="row">
-                <div class="col-xs-3">
-                  <div class="event-cal">
-                    <div class="event-date"><span class="event-date-day">Fri</span> <span class="event-date-num">29th</span> <span class="event-date-mon">Nov 2013</span></div>
-                    <div class="event-time">18:00</div>
-                  </div>
-                </div>
-                <div class="col-xs-9">
-                  <div class="event-description">
-                    <h2>November STMU</h2>
-                    <p>The monthly Student Tech Meetup for November: We have a line of speakers arranged for you and of course free pizza!</p>
-                  </div>
-                </div>
+              <div class="event-cal">
+                <div class="event-date"><span class="event-date-day">Fri</span> <span class="event-date-num">29th</span> <span class="event-date-mon">Nov 2013</span></div>
+                <div class="event-time">18:00</div>
               </div>
+	      <div class="event-description">
+		<h2>November STMU</h2>
+		<p>The monthly Student Tech Meetup for November: We have a line of speakers arranged for you and of course free pizza!</p>
+	      </div>
+	      <div style="clear: both;"></div>
             </section>
 
             <section class="event">
-              <div class="row">
-		<div class="col-xs-3">
-		  <div class="event-cal">
-                    <div class="event-date"><span class="event-date-day">Tue</span> <span class="event-date-num">26th</span> <span class="event-date-mon">Nov 2013</span></div>
-                    <div class="event-time">20:00</div>
-		  </div>
-		</div>
-		<div class="col-xs-9">
-		  <div class="event-description">
-		    <h2>Weekly Social</h2>
-                    <p>Pop down to Bar 50 on the Cowgate and have a chat, food, drink, whatever!</p>
-		  </div>
-		</div>
+	      <div class="event-cal">
+                <div class="event-date"><span class="event-date-day">Tue</span> <span class="event-date-num">26th</span> <span class="event-date-mon">Nov 2013</span></div>
+                <div class="event-time">20:00</div>
+	      </div>
+	      <div class="event-description">
+		<h2>Weekly Social</h2>
+                <p>Pop down to Bar 50 on the Cowgate and have a chat, food, drink, whatever!</p>
 	      </div>
             </section>	    
 	    

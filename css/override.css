@@ -39,7 +39,7 @@
 /* GENERIC TAGS  --   --   --   --    --   --    --   --    --   --    --   --    --   --    --   --    --   --    --   --    */
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-h1, h2, h3 { font-family: 'Fjalla One', Impact, Helvetica, Helvetiva-Neue, sans-serif; }
+h1, h2, h3 { font-family: 'Fjalla One', Helvetica, Helvetiva-Neue, sans-serif; }
 h1 { color: #D3371E; }
 h2 { color: #585856; }
 h3 { color: #83786E; text-transform: uppercase;}
@@ -88,7 +88,7 @@ body {
     }
 
 .userpanel {
-     font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+     font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
      height: 100px;
      min-height: 100px;
      width: 200px;
@@ -104,7 +104,7 @@ body {
     }
 
     .userpanel h3 {
-	font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+	font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
         font-size: 18px;
         color: #0E0E0E;
     }
@@ -127,7 +127,7 @@ body {
     margin: 0;
     border: 0;
     background: #DDDDDD;
-    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+    font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
     font-size: 16px;
 }
  /* Navbar Resets */
@@ -163,6 +163,10 @@ body {
 .navbar-compsoc li > a:hover,
 .navbar-compsoc li > a:active {
     color: #111;
+}
+
+.navbar-compsoc .dropdown-menu > li > a {
+    padding: 8px 20px;
 }
 
 .navbar-compsoc .dropdown-menu > li > a:hover,
@@ -256,7 +260,7 @@ body {
 	color: #111;
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+	font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
     }
 
 
@@ -302,7 +306,7 @@ body {
     padding: 0;
     color: #EEE;
     background: #080808;
-    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+    font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -341,7 +345,7 @@ footer {
     color: #0E0E0E;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+    font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
 }
 
 
@@ -406,7 +410,7 @@ dd {
 }
 
     .event .event-cal {
-	width: 100%;
+	width: 70px;
 	line-height: 1.1;
 	float: left;
 	background: #DDD;
@@ -426,6 +430,10 @@ dd {
 	margin: 0;
     }
     
+    .event .event-description {
+	margin-left: 80px;
+    }
+
     .event .event-description p { font-size: 90%; line-height: 110%; }
     .event .event-date { padding: 5px; }
     .event .event-date-day { display: block; font-size: 100%; }
@@ -463,6 +471,17 @@ hr {
 .main img { margin: 0px auto; }
 
 
+.mar-5  { margin: 5px;  }
+.mar-10 { margin: 10px; }
+.mar-15 { margin: 15px; }
+.mar-20 { margin: 20px; }
+.mar-30 { margin: 30px; }
+.mar-lr-5  { margin: 0px 5px;  }
+.mar-lr-10 { margin: 0px 10px; }
+.mar-lr-15 { margin: 0px 15px; }
+.mar-lr-20 { margin: 0px 20px; }
+.mar-lr-30 { margin: 0px 30px; }
+
 ol ol {
     list-style: lower-latin;
 }
@@ -470,6 +489,19 @@ ol ol {
 ol ol ol {
     list-style: lower-roman;
 }
+
+
+/* ADDED CLASSES: Adds padding */
+.pad-5  { padding: 5px;  }
+.pad-10 { padding: 10px; }
+.pad-15 { padding: 15px; }
+.pad-20 { padding: 20px; }
+.pad-30 { padding: 30px; }
+.pad-lr-5  { padding: 0px 5px;  }
+.pad-lr-10 { padding: 0px 10px; }
+.pad-lr-15 { padding: 0px 15px; }
+.pad-lr-20 { padding: 0px 20px; }
+.pad-lr-30 { padding: 0px 30px; }
 
 
 pre {
@@ -524,6 +556,6 @@ table.table td {
     #i-hate-ie p {
         padding: 0;
         margin: 0;
-        font-family: 'Fjalla One', Impact, Helvetica, Helvetica-Neue, arial, sans-serif;
+        font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
         font-size: 16px;
     }
