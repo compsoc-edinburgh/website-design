@@ -31,8 +31,11 @@
 
     <header class="header">
       <div class="container">
+	<!--[if IE]>
         <img class="header-img" src="img/compsoc.png" alt="Compsoc Edinburgh" >
-	<!--img class="header-img" src="img/compsoc.svg" alt="CompSoc Edinburgh" -->
+	<![if !IE]-->
+	<img class="header-img" src="img/compsoc.svg" alt="CompSoc Edinburgh" >
+	<!-- <![endif]-->
 	<div class="pull-right">
 	  <div class="userpanel">
 	    <a href="#"><img class="user-avatar" src="http://www.gravatar.com/avatar/8655d2dc3ae533044241f069c0670dcd.jpg?s=220&d=retro"></a> 
@@ -331,8 +334,6 @@ moeb f x = go where go = f ($ go) x
 	  <!--  SIDEBAR  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   -->
 	  
 	  <aside class="col-sm-4 sidebar">
-	    <h1>Hop on the IRC Bandwaggon</h1>
-	    <p>We have an IRC channel on irc.imaginarynet.org.uk, come along and chat on #compsoc.</p>
 	    
 	    <h1>Events</h1>
 	    
@@ -357,7 +358,14 @@ moeb f x = go where go = f ($ go) x
 		<h2>Weekly Social</h2>
                 <p>Pop down to Bar 50 on the Cowgate and have a chat, food, drink, whatever!</p>
 	      </div>
+	       <div style="clear: both;"></div>
             </section>	    
+	    
+	    <h1>Hop on the IRC Bandwaggon</h1>
+            <p>We have an IRC channel on irc.imaginarynet.org.uk, come along and chat on #compsoc.</p>
+
+            <h1>Connect with us!</h1>
+	    <p>Like, +1, rebog, retweet and heart us on faceplustergumbletubenet!</p>
 	    
 	  </aside>
 	</div>
