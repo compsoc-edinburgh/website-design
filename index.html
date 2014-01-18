@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <title>COMPSOC - University of Edinburgh Computer Science Society</title>
+    <title></title>
     
     <meta charset="utf=8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
@@ -31,21 +31,26 @@
 
     <header class="header">
       <div class="container">
-	<!--[if IE]>
-        <img class="header-img" src="img/compsoc.png" alt="Compsoc Edinburgh" >
-	<![if !IE]-->
-	<img class="header-img" src="img/compsoc.svg" alt="CompSoc Edinburgh" >
-	<!-- <![endif]-->
-	<div class="pull-right">
-	  <div class="userpanel">
-	    <a href="#"><img class="user-avatar" src="http://www.gravatar.com/avatar/8655d2dc3ae533044241f069c0670dcd.jpg?s=220&d=retro"></a> 
-	    <div class="userinfo">
-	      <a href="#"><h3>JR Hacker</h3></a>
-	      <button class="btn btn-default">Log Out</button>
-	    </div>
+	<!-- img class="header-img" src="img/compsoc.svg" alt="Smart Data Hack" -->
+	<div class="row">
+	  <div class="col-sm-6">
+	    Innovative Learning Week : Informatics
 	  </div>
-	  <div ctyle="clear: both;"></div>
+	  <div class="col-sm-6" style="text-align: right;">
+	    17th to 21st February 2014
+	  </div>
 	</div>
+	
+	<div class="row">
+	  <div class="col-md-8">
+	    <h1>Smart Data Hack</h1>
+	  </div>
+	  <div class="col-md-4">
+	    Heeeeeeey, another column!
+	  </div>
+	</div>
+
+      </div>
     </header>
     
     <nav class="navbar navbar-compsoc">
@@ -99,284 +104,40 @@
 	
 	<!--[if lte IE 8]><div id="i-hate-ie">
 	        <h3>WE LOVE HTML5, CSS3 AND KITTENS!</h3>
-                <p>Your browser, unfortunately, doesn't and we can't be bothered to write special CSS and stuff just so it works in fossilised browsers...</p>
+                <p>Your browser, unfortunately, doesn't and that'd just stop us from using all the fun new things we want to use, so instead of </p>
 	        <p>So maybe invest in something free like Chrome, Firefox and not IE!</p>
 	</div><![endif]-->
 
 	<!-- Optional 3 column gallery: -->
-	<section class="gallery row">
+	<!--section class="gallery row">
 	  
 	  <div class="col-sm-4">
-	    <h3>November STMU</h3>
-	    <div class="row">
-	      <div class="col-xs-4 col-sm-12 col-md-5">
-		<img class="img-responsive img-circle img-thumbnail centre" src="img/xmas-cats.jpg">
-	      </div>
-	      <div class="col-xs-8 col-sm-12 col-md-7">
-		<p>Come on Friday the 29th to the Informatics Forum for free pizza! Someone also mentioned some tech talks and stuff...</p>
-		<em>2013-11-29 18:00 to 20:00</em>
-	      </div>
-	    </div>
+	    <img class="img-responsive img-circle img-thumbnail centre" src="img/rsz_img1.jpg">
 	  </div>
 	  
 	  <div class="col-sm-4">
-            <h3>New New Compsoc Website</h3>
-	    <div class="row">
-	      <div class="col-xs-4 col-sm-12 col-md-5">
-		<img class="img-responsive img-circle img-thumbnail centre" src="img/horse-onesie.jpg">
-	      </div>
-	      <div class="col-xs-8 col-sm-12 col-md-7">
-		<p>Apparently there's a SIG for this but there's a bunch of first years on it so don't get your
-		  hopes up... Anyone have experience building sites in Haskell??! <sup>Not even joking<sup>oh god</sup></sup>
-		  YAY!</p>
-	      </div>
-	    </div>
+	    <img class="img-responsive img-circle img-thumbnail centre" src="img/rsz_img2.jpg">
 	  </div>
 	  
 	  <div class="col-sm-4">
-            <h3>Random Latin Because...</h3>
-	    <div class="row">
-	      <div class="col-xs-4 col-sm-12 col-md-5">
-		<img class="img-responsive img-circle img-thumbnail centre" src="img/gent-cat.jpg">
-	      </div>
-	      <div class="col-xs-8 col-sm-12 col-md-7">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ut lorem varius fringilla. Duis quis metus ligula. Donec ultricies posuere risus a fringilla.</p>
-	      </div>
-	    </div>
+	    <img class="img-responsive img-circle img-thumbnail centre" src="img/rsz_img3.jpg">
 	  </div>
 	  
-	</section>
+	</section-->
 	
 	<!-- Main content and Sidebar: -->
 	<div class="main row" role="main">
-	  <div class="col-sm-8">
-	    
-	  <!-- MAIN PAGE CONTENT:  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   -->
-	  
-	  <article>
-	    <div class="post-header">
-	        <h1>Tags and Bootstrap</h1>
-		<h3>Just so you can see what the CSS does...</h3>
-	    </div>
-	    <p>All of the bootstrap stuff ins available, most of it isn't restyled. There is a config.json with all the changed settings from default Bootstrap.</p>
-	    <p>The title is wrapped in a div with class post-header, which modifies the formatting a little, shrinking the H3 tag which is like a little post blurb for timestamps...</p>
-	    
-	    <h1>Added Classes:</h1>
-	    <h2>Events</h2>
-	    <p>A couple of classes have been added to do compsoccy things, like events, demonstrated by the <q>STMU</q> and <q>Weekly Social</q> in the sidebar...</p>
-	    <p>Code for an event is as follows:</p>
-	    <pre>
-&lt;section class="event"&gt;
-    &lt;div class="event-cal"&gt;
-        &lt;div class="event-date"&gt;
-            &lt;span class="event-date-day"&gt;Wed&lt;/span&gt; 
-            &lt;span class="event-date-num"&gt;25th&lt;/span&gt; 
-            &lt;span class="event-date-mon"&gt;Dec&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class="event-time"&gt;13:37&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="event-description"&gt;
-        &lt;h2&gt;Heading 2&lt;/h2&gt;
-        &lt;p&gt;Paragraph describing the event, where it is and what's happening.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="clear: both;"&gt;&lt;/div&gt;
-&lt;/section&gt;
-	    </pre>
-	    
-	    <h2>Gallery</h2>
-	    <p>A <code>div.gallery</code> class has also beed added to provide a full width bar at the top of the page for columns, demonstrated here with the three column paragraphs at the top. 
-	      It changes to the serif font 'Andada', and restyles the <code>&lt;h3&gt;</code> tag to be smaller, darker and capitalised.</p>
-	    
-	    <h2>Site Announcements</h2>
-	    <p>Using some restyled Bootsratp alerts you can add a small sentence to the top of the page. This HTML would go before the <code>&lt;header&gt;</code></p>
-	    <pre>
-&lt;aside class="announce"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="alert alert-info alert-dismissable"&gt;
-          Hey Guys! Just a heads-up on the upcoming STMU this Friday in AT 4.04!
-          &lt;button type="button" class="close" data-dismiss="alert" &gt;&times;&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/aside&gt;
-	    </pre>
-	    
-	    <h2>Padding</h2>
-	    <p>There are classes <code>.pad-5, .pad-10, .pad-15, .pad-20, .pad-30</code> that add 5, 10, 15, 20, 30 px of padding all round to an object. 
-	      Similarly, there are the classes <code>.mar-5, .mar-10, .mar-15, .mar-20, .mar-30</code> that add a margin. <code>.pad-lr-*</code> & <code>.mar-lr-*</code> apply
-	    the padding/ margin to only the left and right of the object.</p>
-	    
-	    <p>Also the class <code>.centre</code> has been added that centres both block and text elements.</p>
-	    
-	    <hr />
-
-	    <h1>Heading 1</h1>
-	    <p>Spacer Paragraph...</p>
-	    <h2>Heading 2</h2>
-                <p>Spacer Paragraph...</p>
-		<h3>Heading 3</h3>
-                <p>Spacer Paragraph...</p>
-		<h4>Heading 4</h4>
-                <p>Spacer Paragraph...</p>
-		<h5>[unused] Heading 5</h5>
-                <p>Spacer Paragraph...</p>
-		<h6>[unused] Heading 6</h6>
-                <p>Spacer Paragraph...</p>
-		<hr/>
-		<p>Horizontal rule, <code>&lt;hr/&gt;</code> above</p>
-		<blockquote>If there are developers in the audience you'll know this: Developers have the attention spans of slightly moronic woodland creatures. There's not much going on; they want to work on the next thing. Giving them another week is just going to add frustration to everything.
-		  <cite>Linus Torvalds, LinuxCon Europe 2013</cite></blockquote>
-		<p>Block Quote, <code>&lt;blockquote&gt;...&lt;cite&gt;...&lt;/cite&gt;&lt/blockquote&gt;</code></p>
-		<p>Inline quotes are slightly different: <q>Developers have the attention spans of slightly moronic woodland creatures.</q> but are still useful. &lt;q&gt;&lt;/q&gt;</p>
-		
-		<p>Hyperlinks, i.e. &lt;a&gt; tags are fairly simple: <a href="http://www.google.co.uk">Google UK</a> with respect to their styling</p>
-		
-		<p>There's some special formatting for images as well: a &lt;div class="panel panel-default"&gt; conaining two divs with class panel-body and panel-footer will render like:</p>
-		<div class="panel panel-default">
-		  <div class="panel-body">
-		    <img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/googlelogo" />
-		  </div>
-		  <div class="panel-footer centre">
-		    With the caption content rendering in the panel-footer &lt;div&gt;.
-		  </div>
-		</div>
-		
-		<p>Which is different to how images normally render, here kindly demonstrated by Amazon; By default, they render as blocks that are centred.</p>
-		<img class="img-responsive" src="http://comp-soc.com/compsoc/sponsor-logos/amazonlogo" />
-
-		<p>iframes are just normal:</p>
-		<iframe width="420" height="315" src="//www.youtube.com/embed/jjRAKuis7T8" frameborder="0" allowfullscreen></iframe>
-
-		<p>In HTML 5 &lt;b&gt; (bold) has been replaced with &lt;strong&gt; and &lt;i&gt; (itlaics) has been replaced with &lt;em&gt; (emphasis). Old tags still render but we're not using them.</p>
-		<p>So, some bold text using the strong tags looks like: <strong>this</strong> whilst using the old b tags looks like <b>this</b>, i.e. is deprecated in most browsers.</p>
-		<p>Similarly, the emphasis tage gives test like <em>this</em> and the old i tag gives <i>this</i>, which is again deprecated as we're using HTML5</p>
-		<p>The &lt;sup&gt; and &lt;sub&gt; tags are also available for <sup>superscript</sup> and <sub>subscript</sub> text, and are chainable <sup>for people<sup> who reddit too much<sup>Ahhhhh!</sup></sup></sup> But they do mess up the line heights a bit...</p>
-		<p>There are other 'semantic' HTML5 tags, like <small>small</small>, <ins>ins for inserted text</ins>, <del>del for deleted text</del>, and <mark>mark</mark> to mark/hilight text. There's custom css for text selection, that <span style="color: #fff; background: #f57870;">makes it look like this.</span></p>
-		<p>Use &lt;aside&gt; for non-main content like sidebars, and use &lt;article&gt; for articles, posts, main content, etc. and &lt;section&gt; for breaking up articles, and stuff like events. They behave the same as &lt;div&gt; tags but are better from an SEO perspective. </p>
-
-		<table class="table"><thead><tr><td>Double Column</td><td>Tables</td></tr></thead>
-		  <tbody><tr><td>Top Left</td><td>Top Right</td></tr>
-		    <tr><td>Middle Left</td><td>Middle Right</td></tr>
-		    <tr><td>Bottom Left</td><td>Bottom Right</td></tr>
-		    </tbody></table>
-		<p>Various table formats</p>
-		<table class="table"><thead><tr><td>Triple</td><td>Column</td><td>Tables</td></tr></thead>
-		  <tbody>
-		    <tr><td>Top Left</td><td>Top Middle</td><td>Top Right</td></tr>
-		    <tr><td>Middle Left</td><td>Middle Middle</td><td>Middle Right</td></tr>
-		    <tr><td>Bottom Left</td><td>Bottom Middle</td><td>Bottom Right</td></tr>
-		    </tbody></table>
-
-		<p>Difinition lists aren't all that common, but we have CSS for them! Yay!</p>
-		<dl>
-		    <dt>Dummster Anzunehmender User</dt>
-		      <dd>German for stupidest immaginable user; Often at the centre of PEBKAC issues...</dd>
-		        <dt>Bogosort</dt>
-			  <dd>The archetypical perversely awful algorithm (as opposed to bubble sort, which is merely the generic bad algorithm).</dd>
-			  </dl>
-
-		<p>We have the standard ordered and unordered lists as well: &lt;ul | ol&gt; &lt;li&gt;&lt;/li&gt; &lt;/ul | /ol&gt;</p>
-		<ul>
-		    <li>Unoredered list</li>
-		      <li>And another</li>
-		        <li><ul>
-			          <li>An embedded ul</li>
-				        <li>Looks a bit odd...</li>
-					  </ul></li>
-			  <li>And we can also embed ordered lists in unordered ones:</li>
-			    <li><ol>
-				      <li>1st entry</li>
-				            <li>second</li>
-					      </ol></li>
-			      <li>And the list goes on...</li>
-			      </ul>
-		
-		<p>And ordered lists have a different indexing system for 3 levels deep:</p>
-
-		<ol>
-		    <li>The list uses numbered indexing</li>
-		      <li>for the first level, then</li>
-		        <li><ol>
-			          <li>Lowecase latin for the next level of lists;</li>
-				        <li><ol>
-					      <li>Then lowercase numerals for the third level of listing</li>
-					        <li>And on and on and on and on and on and on...</li>
-						      </ol></li>
-					  </ol></li>
-			</ol>
-		
-		<p>There is the &lt;code&gt; tage for <code>Inline code</code>, as well as the Pre:</p>
-		
-		<p>Preformatted code blocks: &lt;pre&gt; &lt;/pre&gt;</p>
-		<pre>
-Note that html in pres will still be rendered; e.g. <q>a quote</q>
-   And that whitespace, like indentation, persists
-
-loeb :: Functor f => f (f a -> a) -> f a
-loeb x = go where go = fmap ($ go) x
-
-moeb :: (((a -> b) -> b) -> c -> a) -> c -> a
-moeb f x = go where go = f ($ go) x
-</pre>
-		<p>We also have footnotes, which should be auto generated??</p>
-		
-		<div class="footnote">
-		  <ol>
-		    <li>These are fairly self-explanatory</li>
-		    <li>Just your run of the mill footnotes...</li>
-		    <li>You've seen these before</li>
-		  </ol>
-		</div>
-		
-		</article>
-	  
-
+      	  <div class="col-sm-6">
 	  </div>
-	  <!--  SIDEBAR  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   -->
-	  
-	  <aside class="col-sm-4 sidebar">
-	    
-	    <h1>Events</h1>
-	    
-	    <section class="event">
-              <div class="event-cal">
-                <div class="event-date"><span class="event-date-day">Fri</span> <span class="event-date-num">29th</span> <span class="event-date-mon">Nov 2013</span></div>
-                <div class="event-time">18:00</div>
-              </div>
-	      <div class="event-description">
-		<h2>November STMU</h2>
-		<p>The monthly Student Tech Meetup for November: We have a line of speakers arranged for you and of course free pizza!</p>
-	      </div>
-	      <div style="clear: both;"></div>
-            </section>
-
-            <section class="event">
-	      <div class="event-cal">
-                <div class="event-date"><span class="event-date-day">Tue</span> <span class="event-date-num">26th</span> <span class="event-date-mon">Nov 2013</span></div>
-                <div class="event-time">20:00</div>
-	      </div>
-	      <div class="event-description">
-		<h2>Weekly Social</h2>
-                <p>Pop down to Bar 50 on the Cowgate and have a chat, food, drink, whatever!</p>
-	      </div>
-	       <div style="clear: both;"></div>
-            </section>	    
-	    
-	    <h1>Hop on the IRC Bandwaggon</h1>
-            <p>We have an IRC channel on irc.imaginarynet.org.uk, come along and chat on #compsoc.</p>
-
-            <h1>Connect with us!</h1>
-	    <p>Like, +1, rebog, retweet and heart us on faceplustergumbletubenet!</p>
-	    
-	  </aside>
+	  <div class="col-sm-6">
+	  </div>
 	</div>
-	
       </div>
     </div>
-    
+
     <div class="container">
       <footer>
-	New New CompSoc Website FTW!
-	<span style="float: right;">Proudly not powered by WordPress</span>
+	<img src="img/compsoc.png" alt="CompSoc">
       </footer>
     </div>
     
