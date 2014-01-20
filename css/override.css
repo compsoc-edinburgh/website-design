@@ -350,6 +350,11 @@ footer {
     font-family: 'Fjalla One', Helvetica, Helvetica-Neue, arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+    footer {
+	margin-bottom: 0px;
+    }
+}
 
 /*  FORMATTING  --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   */
 
